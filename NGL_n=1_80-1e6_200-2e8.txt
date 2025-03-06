@@ -1,0 +1,2215 @@
+
+=== 开始适应性迭代阶段 ===
+Integrator Settings:
+    1e+06 (approx) integrand evaluations in each of 80 iterations
+    number of: strata/axis = [6 6 5 5 5 5 5]
+               increments/axis = [ 996  996 1000 1000 1000 1000 1000]
+               h-cubes = 112500  processors = 13
+               evaluations/batch >= 6.5e+05
+               2 <= evaluations/h-cube <= 5e+04
+    minimize_mem = False  adapt_to_errors = False  adapt = True
+    accuracy: relative = 0  absolute = 0
+    damping: alpha = 0.5  beta= 0.75
+
+    axis          integration limits
+    --------------------------------
+       0    (0.0, 6.283185307179586)
+       1                  (0.0, 1.0)
+       2                  (0.0, 1.0)
+       3                  (0.0, 1.0)
+       4                  (0.0, 1.0)
+       5                  (0.0, 1.0)
+       6                  (0.0, 1.0)
+
+    itn  1: -2.0(3.5)
+ all itn's: -2.0(3.5)
+    neval = 900000  neval/h-cube = (2, 8)
+    chi2/dof = 0.00  Q = 1.00  time = 1.91
+
+
+
+    itn  2: 0.1(1.3)
+ all itn's: -0.1(1.2)
+    neval = 918464  neval/h-cube = (2, 10866)
+    chi2/dof = 0.33  Q = 0.57  time = 0.15
+
+
+
+    itn  3: -0.89(70)
+ all itn's: -0.70(60)
+    neval = 920108  neval/h-cube = (2, 3155)
+    chi2/dof = 0.31  Q = 0.74  time = 0.16
+
+
+
+    itn  4: -0.29(33)
+ all itn's: -0.38(29)
+    neval = 919689  neval/h-cube = (2, 2291)
+    chi2/dof = 0.32  Q = 0.81  time = 0.15
+
+
+
+    itn  5: -0.28(37)
+ all itn's: -0.34(23)
+    neval = 919669  neval/h-cube = (2, 1032)
+    chi2/dof = 0.26  Q = 0.91  time = 0.14
+
+
+
+    itn  6: 0.07(21)
+ all itn's: -0.12(15)
+    neval = 919696  neval/h-cube = (2, 1304)
+    chi2/dof = 0.56  Q = 0.73  time = 0.14
+
+
+
+    itn  7: 0.57(28)
+ all itn's: 0.04(13)
+    neval = 919812  neval/h-cube = (2, 648)
+    chi2/dof = 1.26  Q = 0.27  time = 0.14
+
+
+
+    itn  8: -0.26(27)
+ all itn's: -0.01(12)
+    neval = 919937  neval/h-cube = (2, 1273)
+    chi2/dof = 1.22  Q = 0.29  time = 0.14
+
+
+
+    itn  9: 0.19(12)
+ all itn's: 0.089(85)
+    neval = 920227  neval/h-cube = (2, 1804)
+    chi2/dof = 1.25  Q = 0.26  time = 0.14
+
+
+
+    itn 10: -0.10(12)
+ all itn's: 0.024(69)
+    neval = 920444  neval/h-cube = (2, 378)
+    chi2/dof = 1.30  Q = 0.23  time = 0.14
+
+
+
+    itn 11: -0.273(97)
+ all itn's: -0.074(56)
+    neval = 920697  neval/h-cube = (2, 676)
+    chi2/dof = 1.80  Q = 0.06  time = 0.14
+
+
+
+    itn 12: 0.027(92)
+ all itn's: -0.047(48)
+    neval = 920627  neval/h-cube = (2, 389)
+    chi2/dof = 1.71  Q = 0.06  time = 0.14
+
+
+
+    itn 13: 0.054(74)
+ all itn's: -0.017(40)
+    neval = 920823  neval/h-cube = (2, 453)
+    chi2/dof = 1.68  Q = 0.06  time = 0.14
+
+
+
+    itn 14: -0.021(70)
+ all itn's: -0.018(35)
+    neval = 920991  neval/h-cube = (2, 200)
+    chi2/dof = 1.55  Q = 0.09  time = 0.14
+
+
+
+    itn 15: 0.021(66)
+ all itn's: -0.010(31)
+    neval = 921045  neval/h-cube = (2, 244)
+    chi2/dof = 1.46  Q = 0.12  time = 0.14
+
+
+
+    itn 16: 0.009(65)
+ all itn's: -0.006(28)
+    neval = 920990  neval/h-cube = (2, 159)
+    chi2/dof = 1.37  Q = 0.15  time = 0.14
+
+
+
+    itn 17: -0.083(63)
+ all itn's: -0.019(26)
+    neval = 921074  neval/h-cube = (2, 165)
+    chi2/dof = 1.36  Q = 0.15  time = 0.14
+
+
+
+    itn 18: -0.067(72)
+ all itn's: -0.024(24)
+    neval = 920828  neval/h-cube = (2, 226)
+    chi2/dof = 1.30  Q = 0.18  time = 0.14
+
+
+
+    itn 19: 0.048(62)
+ all itn's: -0.015(22)
+    neval = 920803  neval/h-cube = (2, 449)
+    chi2/dof = 1.29  Q = 0.18  time = 0.14
+
+
+
+    itn 20: 0.004(63)
+ all itn's: -0.013(21)
+    neval = 920829  neval/h-cube = (2, 323)
+    chi2/dof = 1.23  Q = 0.22  time = 0.14
+
+
+
+    itn 21: -0.049(61)
+ all itn's: -0.017(20)
+    neval = 920906  neval/h-cube = (2, 272)
+    chi2/dof = 1.19  Q = 0.26  time = 0.14
+
+
+
+    itn 22: 0.048(59)
+ all itn's: -0.010(19)
+    neval = 920855  neval/h-cube = (2, 239)
+    chi2/dof = 1.18  Q = 0.26  time = 0.14
+
+
+
+    itn 23: 0.042(59)
+ all itn's: -0.005(18)
+    neval = 920893  neval/h-cube = (2, 177)
+    chi2/dof = 1.16  Q = 0.27  time = 0.14
+
+
+
+    itn 24: 0.14(15)
+ all itn's: -0.003(18)
+    neval = 920716  neval/h-cube = (2, 177)
+    chi2/dof = 1.15  Q = 0.28  time = 0.14
+
+
+
+    itn 25: 0.012(57)
+ all itn's: -0.002(17)
+    neval = 920914  neval/h-cube = (2, 1440)
+    chi2/dof = 1.11  Q = 0.33  time = 0.14
+
+
+
+    itn 26: 0.049(58)
+ all itn's: 0.003(16)
+    neval = 920665  neval/h-cube = (2, 173)
+    chi2/dof = 1.09  Q = 0.34  time = 0.14
+
+
+
+    itn 27: 0.083(57)
+ all itn's: 0.009(16)
+    neval = 920657  neval/h-cube = (2, 158)
+    chi2/dof = 1.12  Q = 0.31  time = 0.14
+
+
+
+    itn 28: 0.040(63)
+ all itn's: 0.011(15)
+    neval = 920590  neval/h-cube = (2, 89)
+    chi2/dof = 1.09  Q = 0.35  time = 0.14
+
+
+
+    itn 29: -0.021(57)
+ all itn's: 0.008(15)
+    neval = 920837  neval/h-cube = (2, 393)
+    chi2/dof = 1.06  Q = 0.38  time = 0.14
+
+
+
+    itn 30: -0.030(57)
+ all itn's: 0.006(14)
+    neval = 920572  neval/h-cube = (2, 94)
+    chi2/dof = 1.04  Q = 0.41  time = 0.14
+
+
+
+    itn 31: -0.017(57)
+ all itn's: 0.005(14)
+    neval = 920522  neval/h-cube = (2, 137)
+    chi2/dof = 1.01  Q = 0.46  time = 0.14
+
+
+
+    itn 32: 0.022(58)
+ all itn's: 0.006(13)
+    neval = 920545  neval/h-cube = (2, 123)
+    chi2/dof = 0.98  Q = 0.50  time = 0.14
+
+
+
+    itn 33: 0.030(58)
+ all itn's: 0.007(13)
+    neval = 920430  neval/h-cube = (2, 123)
+    chi2/dof = 0.95  Q = 0.55  time = 0.14
+
+
+
+    itn 34: -0.006(57)
+ all itn's: 0.006(13)
+    neval = 920471  neval/h-cube = (2, 125)
+    chi2/dof = 0.92  Q = 0.59  time = 0.14
+
+
+
+    itn 35: 0.056(58)
+ all itn's: 0.009(12)
+    neval = 920293  neval/h-cube = (2, 89)
+    chi2/dof = 0.92  Q = 0.61  time = 0.14
+
+
+
+    itn 36: 0.017(58)
+ all itn's: 0.009(12)
+    neval = 920240  neval/h-cube = (2, 102)
+    chi2/dof = 0.89  Q = 0.65  time = 0.14
+
+
+
+    itn 37: -0.157(58)
+ all itn's: 0.002(12)
+    neval = 920322  neval/h-cube = (2, 107)
+    chi2/dof = 1.09  Q = 0.33  time = 0.13
+
+
+
+    itn 38: -0.029(59)
+ all itn's: 0.0006(117)
+    neval = 920264  neval/h-cube = (2, 97)
+    chi2/dof = 1.07  Q = 0.36  time = 0.14
+
+
+
+    itn 39: -0.002(58)
+ all itn's: 0.0005(115)
+    neval = 920167  neval/h-cube = (2, 212)
+    chi2/dof = 1.04  Q = 0.41  time = 0.14
+
+
+
+    itn 40: -0.111(58)
+ all itn's: -0.004(11)
+    neval = 920276  neval/h-cube = (2, 85)
+    chi2/dof = 1.10  Q = 0.31  time = 0.14
+
+
+
+    itn 41: -0.030(58)
+ all itn's: -0.005(11)
+    neval = 920110  neval/h-cube = (2, 74)
+    chi2/dof = 1.08  Q = 0.34  time = 0.14
+
+
+
+    itn 42: 0.208(59)
+ all itn's: 0.003(11)
+    neval = 920111  neval/h-cube = (2, 117)
+    chi2/dof = 1.36  Q = 0.06  time = 0.14
+
+
+
+    itn 43: -0.028(58)
+ all itn's: 0.002(11)
+    neval = 920272  neval/h-cube = (2, 184)
+    chi2/dof = 1.34  Q = 0.07  time = 0.13
+
+
+
+    itn 44: 0.038(58)
+ all itn's: 0.003(10)
+    neval = 920007  neval/h-cube = (2, 83)
+    chi2/dof = 1.31  Q = 0.08  time = 0.14
+
+
+
+    itn 45: -0.051(59)
+ all itn's: 0.001(10)
+    neval = 920131  neval/h-cube = (2, 112)
+    chi2/dof = 1.30  Q = 0.09  time = 0.14
+
+
+
+    itn 46: -0.065(63)
+ all itn's: -0.0006(102)
+    neval = 920158  neval/h-cube = (2, 103)
+    chi2/dof = 1.30  Q = 0.09  time = 0.14
+
+
+
+    itn 47: -0.119(59)
+ all itn's: -0.004(10)
+    neval = 920126  neval/h-cube = (2, 372)
+    chi2/dof = 1.35  Q = 0.06  time = 0.14
+
+
+
+    itn 48: -0.008(59)
+ all itn's: -0.0041(99)
+    neval = 920006  neval/h-cube = (2, 178)
+    chi2/dof = 1.32  Q = 0.07  time = 0.14
+
+
+
+    itn 49: 0.017(59)
+ all itn's: -0.0035(98)
+    neval = 920053  neval/h-cube = (2, 150)
+    chi2/dof = 1.30  Q = 0.08  time = 0.14
+
+
+
+    itn 50: 0.006(61)
+ all itn's: -0.0033(96)
+    neval = 920283  neval/h-cube = (2, 83)
+    chi2/dof = 1.27  Q = 0.10  time = 0.14
+
+
+
+    itn 51: -0.079(59)
+ all itn's: -0.0053(95)
+    neval = 920127  neval/h-cube = (2, 267)
+    chi2/dof = 1.28  Q = 0.09  time = 0.14
+
+
+
+    itn 52: -0.008(59)
+ all itn's: -0.0053(94)
+    neval = 920070  neval/h-cube = (2, 91)
+    chi2/dof = 1.25  Q = 0.10  time = 0.14
+
+
+
+    itn 53: 0.011(59)
+ all itn's: -0.0049(93)
+    neval = 919968  neval/h-cube = (2, 83)
+    chi2/dof = 1.23  Q = 0.12  time = 0.14
+
+
+
+    itn 54: -0.055(59)
+ all itn's: -0.0061(92)
+    neval = 919995  neval/h-cube = (2, 141)
+    chi2/dof = 1.22  Q = 0.13  time = 0.13
+
+
+
+    itn 55: -0.033(59)
+ all itn's: -0.0067(91)
+    neval = 920036  neval/h-cube = (2, 89)
+    chi2/dof = 1.20  Q = 0.15  time = 0.14
+
+
+
+    itn 56: -0.106(59)
+ all itn's: -0.0090(89)
+    neval = 919797  neval/h-cube = (2, 57)
+    chi2/dof = 1.23  Q = 0.12  time = 0.14
+
+
+
+    itn 57: 0.016(59)
+ all itn's: -0.0085(88)
+    neval = 919949  neval/h-cube = (2, 58)
+    chi2/dof = 1.21  Q = 0.13  time = 0.14
+
+
+
+    itn 58: 0.043(60)
+ all itn's: -0.0074(88)
+    neval = 920072  neval/h-cube = (2, 89)
+    chi2/dof = 1.20  Q = 0.14  time = 0.14
+
+
+
+    itn 59: 0.011(59)
+ all itn's: -0.0070(87)
+    neval = 919987  neval/h-cube = (2, 156)
+    chi2/dof = 1.19  Q = 0.16  time = 0.14
+
+
+
+    itn 60: 0.108(61)
+ all itn's: -0.0047(86)
+    neval = 919897  neval/h-cube = (2, 165)
+    chi2/dof = 1.22  Q = 0.12  time = 0.13
+
+
+
+    itn 61: 0.074(59)
+ all itn's: -0.0031(85)
+    neval = 919955  neval/h-cube = (2, 258)
+    chi2/dof = 1.23  Q = 0.11  time = 0.14
+
+
+
+    itn 62: 0.058(61)
+ all itn's: -0.0019(84)
+    neval = 920060  neval/h-cube = (2, 49)
+    chi2/dof = 1.23  Q = 0.11  time = 0.14
+
+
+
+    itn 63: -0.054(59)
+ all itn's: -0.0030(83)
+    neval = 919891  neval/h-cube = (2, 214)
+    chi2/dof = 1.22  Q = 0.11  time = 0.14
+
+
+
+    itn 64: -0.029(60)
+ all itn's: -0.0035(82)
+    neval = 919906  neval/h-cube = (2, 79)
+    chi2/dof = 1.20  Q = 0.13  time = 0.13
+
+
+
+    itn 65: -0.042(60)
+ all itn's: -0.0042(82)
+    neval = 919965  neval/h-cube = (2, 169)
+    chi2/dof = 1.19  Q = 0.14  time = 0.14
+
+
+
+    itn 66: -0.011(59)
+ all itn's: -0.0043(81)
+    neval = 919731  neval/h-cube = (2, 186)
+    chi2/dof = 1.17  Q = 0.16  time = 0.14
+
+
+
+    itn 67: -0.016(61)
+ all itn's: -0.0045(80)
+    neval = 919913  neval/h-cube = (2, 57)
+    chi2/dof = 1.16  Q = 0.18  time = 0.14
+
+
+
+    itn 68: -0.021(60)
+ all itn's: -0.0048(79)
+    neval = 919887  neval/h-cube = (2, 237)
+    chi2/dof = 1.14  Q = 0.20  time = 0.14
+
+
+
+    itn 69: -0.052(60)
+ all itn's: -0.0056(79)
+    neval = 919879  neval/h-cube = (2, 174)
+    chi2/dof = 1.13  Q = 0.21  time = 0.14
+
+
+
+    itn 70: 0.077(59)
+ all itn's: -0.0042(78)
+    neval = 919809  neval/h-cube = (2, 136)
+    chi2/dof = 1.14  Q = 0.19  time = 0.14
+
+
+
+    itn 71: -0.100(59)
+ all itn's: -0.0058(77)
+    neval = 919907  neval/h-cube = (2, 67)
+    chi2/dof = 1.16  Q = 0.17  time = 0.14
+
+
+
+    itn 72: -0.009(60)
+ all itn's: -0.0058(77)
+    neval = 919688  neval/h-cube = (2, 63)
+    chi2/dof = 1.15  Q = 0.19  time = 0.14
+
+
+
+    itn 73: -0.004(60)
+ all itn's: -0.0058(76)
+    neval = 919648  neval/h-cube = (2, 76)
+    chi2/dof = 1.13  Q = 0.21  time = 0.15
+
+
+
+    itn 74: -0.039(61)
+ all itn's: -0.0063(76)
+    neval = 919999  neval/h-cube = (2, 109)
+    chi2/dof = 1.12  Q = 0.23  time = 0.14
+
+
+
+    itn 75: 0.078(60)
+ all itn's: -0.0050(75)
+    neval = 919758  neval/h-cube = (2, 260)
+    chi2/dof = 1.13  Q = 0.21  time = 0.13
+
+
+
+    itn 76: -0.053(60)
+ all itn's: -0.0057(74)
+    neval = 919745  neval/h-cube = (2, 135)
+    chi2/dof = 1.12  Q = 0.22  time = 0.14
+
+
+
+    itn 77: 0.034(61)
+ all itn's: -0.0052(74)
+    neval = 919880  neval/h-cube = (2, 97)
+    chi2/dof = 1.12  Q = 0.23  time = 0.13
+
+
+
+    itn 78: 0.009(60)
+ all itn's: -0.0049(73)
+    neval = 919907  neval/h-cube = (2, 229)
+    chi2/dof = 1.10  Q = 0.25  time = 0.13
+
+
+
+    itn 79: -0.035(60)
+ all itn's: -0.0054(73)
+    neval = 919787  neval/h-cube = (2, 78)
+    chi2/dof = 1.09  Q = 0.27  time = 0.14
+
+
+
+    itn 80: 0.039(60)
+ all itn's: -0.0048(72)
+    neval = 919683  neval/h-cube = (2, 106)
+    chi2/dof = 1.08  Q = 0.29  time = 0.14
+
+
+
+
+=== 开始最终积分阶段 ===
+Integrator Settings:
+    2e+08 (approx) integrand evaluations in each of 200 iterations
+    number of: strata/axis = [12 12 11 11 11 11 11]
+               increments/axis = [996 996 990 990 990 990 990]
+               h-cubes = 2.31913e+07  processors = 13
+               evaluations/batch >= 6.5e+05
+               2 <= evaluations/h-cube <= 5e+04
+    minimize_mem = False  adapt_to_errors = False  adapt = False
+    accuracy: relative = 0  absolute = 0
+    damping: alpha = 0  beta= 0
+
+    axis          integration limits
+    --------------------------------
+       0    (0.0, 6.283185307179586)
+       1                  (0.0, 1.0)
+       2                  (0.0, 1.0)
+       3                  (0.0, 1.0)
+       4                  (0.0, 1.0)
+       5                  (0.0, 1.0)
+       6                  (0.0, 1.0)
+
+    itn  1: -0.0049(28)
+ all itn's: -0.0049(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.00  Q = 1.00  time = 24.73
+
+
+
+    itn  2: -0.0016(32)
+ all itn's: -0.0032(21)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.61  Q = 0.44  time = 24.56
+
+
+
+    itn  3: 0.0005(29)
+ all itn's: -0.0020(17)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.42  time = 24.34
+
+
+
+    itn  4: 0.0035(32)
+ all itn's: -0.0006(15)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.36  Q = 0.25  time = 24.52
+
+
+
+    itn  5: -0.0053(66)
+ all itn's: -0.0016(18)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.49  time = 24.49
+
+
+
+    itn  6: 0.0016(28)
+ all itn's: -0.0010(16)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.51  time = 24.49
+
+
+
+    itn  7: 0.0041(29)
+ all itn's: -0.0003(14)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.04  Q = 0.40  time = 24.35
+
+
+
+    itn  8: -0.0074(31)
+ all itn's: -0.0012(13)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.41  Q = 0.20  time = 24.33
+
+
+
+    itn  9: 0.0018(29)
+ all itn's: -0.0009(12)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.37  Q = 0.21  time = 24.23
+
+
+
+    itn 10: -0.0024(29)
+ all itn's: -0.0010(11)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.27  Q = 0.25  time = 24.26
+
+
+
+    itn 11: 0.0048(39)
+ all itn's: -0.0005(11)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.37  Q = 0.19  time = 24.38
+
+
+
+    itn 12: -0.0008(33)
+ all itn's: -0.0005(10)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.26  Q = 0.24  time = 24.32
+
+
+
+    itn 13: -0.0006(30)
+ all itn's: -0.00052(97)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.18  Q = 0.29  time = 24.26
+
+
+
+    itn 14: -0.0032(29)
+ all itn's: -0.00071(92)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.16  Q = 0.31  time = 24.33
+
+
+
+    itn 15: 0.0011(29)
+ all itn's: -0.00059(88)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.11  Q = 0.34  time = 27.59
+
+
+
+    itn 16: 0.0022(32)
+ all itn's: -0.00041(85)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.09  Q = 0.36  time = 25.14
+
+
+
+    itn 17: 0.0011(63)
+ all itn's: -0.00032(88)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.56  time = 24.82
+
+
+
+    itn 18: -0.0005(29)
+ all itn's: -0.00033(85)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.61  time = 24.98
+
+
+
+    itn 19: -0.0032(31)
+ all itn's: -0.00048(82)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.62  time = 24.79
+
+
+
+    itn 20: -0.0004(28)
+ all itn's: -0.00048(79)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.83  Q = 0.67  time = 25.14
+
+
+
+    itn 21: 0.0017(30)
+ all itn's: -0.00037(77)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.82  Q = 0.69  time = 25.16
+
+
+
+    itn 22: -0.0005(40)
+ all itn's: -0.00038(75)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.77  Q = 0.76  time = 24.46
+
+
+
+    itn 23: -0.0064(28)
+ all itn's: -0.00064(73)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.63  time = 24.28
+
+
+
+    itn 24: -0.0040(28)
+ all itn's: -0.00078(71)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.61  time = 24.41
+
+
+
+    itn 25: 0.0018(30)
+ all itn's: -0.00068(69)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.63  time = 24.37
+
+
+
+    itn 26: 0.0041(35)
+ all itn's: -0.00050(68)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.58  time = 24.52
+
+
+
+    itn 27: 0.0004(33)
+ all itn's: -0.00046(67)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.62  time = 24.43
+
+
+
+    itn 28: -0.0003(29)
+ all itn's: -0.00046(65)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.66  time = 24.28
+
+
+
+    itn 29: 0.0048(28)
+ all itn's: -0.00027(64)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.57  time = 24.29
+
+
+
+    itn 30: -0.0002(29)
+ all itn's: -0.00027(62)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.61  time = 24.30
+
+
+
+    itn 31: -0.0022(29)
+ all itn's: -0.00033(61)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.64  time = 24.18
+
+
+
+    itn 32: -0.0020(30)
+ all itn's: -0.00039(60)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.66  time = 24.19
+
+
+
+    itn 33: 0.0011(30)
+ all itn's: -0.00034(59)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.69  time = 24.19
+
+
+
+    itn 34: 0.0022(28)
+ all itn's: -0.00027(58)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.70  time = 24.27
+
+
+
+    itn 35: 0.0003(28)
+ all itn's: -0.00025(56)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.84  Q = 0.73  time = 24.28
+
+
+
+    itn 36: -0.0035(39)
+ all itn's: -0.00034(56)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.84  Q = 0.74  time = 24.22
+
+
+
+    itn 37: -0.0047(28)
+ all itn's: -0.00046(55)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.70  time = 24.19
+
+
+
+    itn 38: 0.0053(28)
+ all itn's: -0.00031(54)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.60  time = 24.27
+
+
+
+    itn 39: -0.0012(29)
+ all itn's: -0.00033(53)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.63  time = 24.23
+
+
+
+    itn 40: -0.0038(28)
+ all itn's: -0.00042(52)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.61  time = 24.29
+
+
+
+    itn 41: -0.00008(283)
+ all itn's: -0.00041(51)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.65  time = 24.26
+
+
+
+    itn 42: -0.0061(67)
+ all itn's: -0.00054(53)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.68  time = 24.31
+
+
+
+    itn 43: -0.0013(28)
+ all itn's: -0.00056(52)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.71  time = 24.23
+
+
+
+    itn 44: 0.0001(28)
+ all itn's: -0.00054(51)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.73  time = 24.27
+
+
+
+    itn 45: -0.0058(28)
+ all itn's: -0.00066(50)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.66  time = 24.25
+
+
+
+    itn 46: 0.0035(28)
+ all itn's: -0.00057(50)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.63  time = 24.24
+
+
+
+    itn 47: -0.0011(29)
+ all itn's: -0.00058(49)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.66  time = 24.33
+
+
+
+    itn 48: -0.0018(29)
+ all itn's: -0.00061(48)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.68  time = 24.26
+
+
+
+    itn 49: -0.0020(28)
+ all itn's: -0.00064(48)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.70  time = 24.22
+
+
+
+    itn 50: 0.0019(44)
+ all itn's: -0.00059(48)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.74  time = 24.26
+
+
+
+    itn 51: -0.00001(275)
+ all itn's: -0.00057(47)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.85  Q = 0.76  time = 24.26
+
+
+
+    itn 52: -0.0059(30)
+ all itn's: -0.00068(46)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.70  time = 24.29
+
+
+
+    itn 53: 0.0018(30)
+ all itn's: -0.00063(46)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.71  time = 24.43
+
+
+
+    itn 54: 0.0026(29)
+ all itn's: -0.00057(45)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.70  time = 24.27
+
+
+
+    itn 55: 0.0030(30)
+ all itn's: -0.00050(45)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.69  time = 24.23
+
+
+
+    itn 56: -0.0009(46)
+ all itn's: -0.00051(45)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.75  time = 24.29
+
+
+
+    itn 57: 0.0014(32)
+ all itn's: -0.00048(44)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.86  Q = 0.76  time = 24.32
+
+
+
+    itn 58: -0.0057(29)
+ all itn's: -0.00057(44)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.71  time = 24.72
+
+
+
+    itn 59: -0.0015(28)
+ all itn's: -0.00058(43)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.73  time = 24.47
+
+
+
+    itn 60: 0.0032(29)
+ all itn's: -0.00052(43)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.71  time = 24.49
+
+
+
+    itn 61: 0.0016(30)
+ all itn's: -0.00049(42)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.72  time = 24.51
+
+
+
+    itn 62: -0.0042(29)
+ all itn's: -0.00055(42)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.70  time = 24.60
+
+
+
+    itn 63: 0.0009(29)
+ all itn's: -0.00052(42)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.72  time = 24.58
+
+
+
+    itn 64: 0.0053(30)
+ all itn's: -0.00043(41)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.65  time = 24.31
+
+
+
+    itn 65: 0.0028(30)
+ all itn's: -0.00038(41)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.64  time = 24.46
+
+
+
+    itn 66: -0.0042(29)
+ all itn's: -0.00044(41)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.94  Q = 0.62  time = 24.38
+
+
+
+    itn 67: 0.0002(28)
+ all itn's: -0.00043(40)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.65  time = 24.27
+
+
+
+    itn 68: 0.0028(30)
+ all itn's: -0.00038(40)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.64  time = 24.29
+
+
+
+    itn 69: 0.0017(28)
+ all itn's: -0.00035(39)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.65  time = 24.35
+
+
+
+    itn 70: -0.0005(30)
+ all itn's: -0.00035(39)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.68  time = 24.32
+
+
+
+    itn 71: -0.0033(28)
+ all itn's: -0.00040(39)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.68  time = 24.28
+
+
+
+    itn 72: -0.0009(29)
+ all itn's: -0.00040(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.70  time = 24.25
+
+
+
+    itn 73: -0.0009(31)
+ all itn's: -0.00041(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.72  time = 24.29
+
+
+
+    itn 74: -0.0010(33)
+ all itn's: -0.00042(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.75  time = 24.24
+
+
+
+    itn 75: -0.0008(39)
+ all itn's: -0.00042(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.79  time = 24.32
+
+
+
+    itn 76: -0.0051(28)
+ all itn's: -0.00048(37)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.75  time = 24.40
+
+
+
+    itn 77: -0.0060(51)
+ all itn's: -0.00056(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.73  time = 24.30
+
+
+
+    itn 78: 0.0040(48)
+ all itn's: -0.00050(38)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.74  time = 24.29
+
+
+
+    itn 79: 0.0011(28)
+ all itn's: -0.00048(37)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.75  time = 24.22
+
+
+
+    itn 80: 0.0008(28)
+ all itn's: -0.00046(37)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.77  time = 24.24
+
+
+
+    itn 81: 0.0022(28)
+ all itn's: -0.00043(37)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.77  time = 24.23
+
+
+
+    itn 82: -0.0053(45)
+ all itn's: -0.00049(37)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.22
+
+
+
+    itn 83: 0.0034(30)
+ all itn's: -0.00044(36)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.74  time = 24.25
+
+
+
+    itn 84: 0.0021(36)
+ all itn's: -0.00041(36)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.25
+
+
+
+    itn 85: 0.0036(33)
+ all itn's: -0.00036(36)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.74  time = 24.25
+
+
+
+    itn 86: -0.0002(29)
+ all itn's: -0.00036(36)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.28
+
+
+
+    itn 87: 0.0017(28)
+ all itn's: -0.00034(35)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.77  time = 24.32
+
+
+
+    itn 88: 0.0032(31)
+ all itn's: -0.00030(35)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.24
+
+
+
+    itn 89: -0.0035(29)
+ all itn's: -0.00034(35)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.26
+
+
+
+    itn 90: 0.0031(31)
+ all itn's: -0.00030(35)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.75  time = 24.29
+
+
+
+    itn 91: -0.0040(28)
+ all itn's: -0.00034(35)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.74  time = 24.49
+
+
+
+    itn 92: -0.0009(29)
+ all itn's: -0.00034(34)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.45
+
+
+
+    itn 93: -0.0010(28)
+ all itn's: -0.00035(34)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.77  time = 24.38
+
+
+
+    itn 94: -0.0005(27)
+ all itn's: -0.00035(34)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.79  time = 24.32
+
+
+
+    itn 95: -0.0010(36)
+ all itn's: -0.00036(34)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.81  time = 24.20
+
+
+
+    itn 96: -0.0067(42)
+ all itn's: -0.00043(34)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.76  time = 24.13
+
+
+
+    itn 97: 0.0008(34)
+ all itn's: -0.00041(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.78  time = 24.20
+
+
+
+    itn 98: 0.0013(31)
+ all itn's: -0.00040(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.80  time = 24.27
+
+
+
+    itn 99: 0.0027(29)
+ all itn's: -0.00036(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.79  time = 24.21
+
+
+
+    itn 100: 0.0006(30)
+ all itn's: -0.00036(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.81  time = 24.30
+
+
+
+    itn 101: 0.0017(29)
+ all itn's: -0.00033(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.82  time = 24.26
+
+
+
+    itn 102: -0.0039(33)
+ all itn's: -0.00037(33)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.81  time = 24.26
+
+
+
+    itn 103: 0.0039(36)
+ all itn's: -0.00033(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.80  time = 24.14
+
+
+
+    itn 104: -0.0024(28)
+ all itn's: -0.00035(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.81  time = 24.61
+
+
+
+    itn 105: 0.0052(29)
+ all itn's: -0.00030(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.76  time = 25.38
+
+
+
+    itn 106: -0.0019(32)
+ all itn's: -0.00031(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.78  time = 25.04
+
+
+
+    itn 107: 0.0041(29)
+ all itn's: -0.00027(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.75  time = 24.69
+
+
+
+    itn 108: 0.0038(29)
+ all itn's: -0.00023(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.74  time = 25.04
+
+
+
+    itn 109: -0.0010(29)
+ all itn's: -0.00024(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.75  time = 24.95
+
+
+
+    itn 110: 0.0021(31)
+ all itn's: -0.00022(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.76  time = 24.69
+
+
+
+    itn 111: -0.0042(32)
+ all itn's: -0.00025(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.75  time = 24.61
+
+
+
+    itn 112: 0.0016(30)
+ all itn's: -0.00024(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.76  time = 24.88
+
+
+
+    itn 113: 0.0006(28)
+ all itn's: -0.00023(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.77  time = 24.30
+
+
+
+    itn 114: -0.010(11)
+ all itn's: -0.00032(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.80  time = 24.92
+
+
+
+    itn 115: -0.0019(28)
+ all itn's: -0.00033(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.81  time = 24.49
+
+
+
+    itn 116: -0.0018(27)
+ all itn's: -0.00034(32)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.82  time = 24.37
+
+
+
+    itn 117: 0.0032(29)
+ all itn's: -0.00031(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.81  time = 24.48
+
+
+
+    itn 118: 0.0020(28)
+ all itn's: -0.00029(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.81  time = 24.37
+
+
+
+    itn 119: 0.000006(2971)
+ all itn's: -0.00029(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.83  time = 24.36
+
+
+
+    itn 120: -0.0018(28)
+ all itn's: -0.00030(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.84  time = 24.34
+
+
+
+    itn 121: 0.0040(33)
+ all itn's: -0.00027(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.82  time = 24.37
+
+
+
+    itn 122: 0.0020(27)
+ all itn's: -0.00025(31)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.83  time = 24.34
+
+
+
+    itn 123: 0.0009(33)
+ all itn's: -0.00024(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.87  Q = 0.84  time = 24.36
+
+
+
+    itn 124: -0.0054(36)
+ all itn's: -0.00028(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.82  time = 24.38
+
+
+
+    itn 125: 0.0035(32)
+ all itn's: -0.00025(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.81  time = 24.33
+
+
+
+    itn 126: 0.0030(28)
+ all itn's: -0.00023(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.81  time = 24.38
+
+
+
+    itn 127: 0.0013(29)
+ all itn's: -0.00021(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.82  time = 24.35
+
+
+
+    itn 128: -0.0056(28)
+ all itn's: -0.00026(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.78  time = 24.33
+
+
+
+    itn 129: -0.0017(32)
+ all itn's: -0.00027(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.79  time = 24.41
+
+
+
+    itn 130: 0.0014(30)
+ all itn's: -0.00026(30)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.80  time = 24.37
+
+
+
+    itn 131: 0.0003(29)
+ all itn's: -0.00025(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.82  time = 24.32
+
+
+
+    itn 132: 0.0023(28)
+ all itn's: -0.00023(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.89  Q = 0.82  time = 24.44
+
+
+
+    itn 133: 0.0002(34)
+ all itn's: -0.00023(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.88  Q = 0.83  time = 24.36
+
+
+
+    itn 134: -0.0068(45)
+ all itn's: -0.00028(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.80  time = 24.35
+
+
+
+    itn 135: 0.0043(31)
+ all itn's: -0.00024(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.78  time = 24.37
+
+
+
+    itn 136: 0.0012(29)
+ all itn's: -0.00023(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.90  Q = 0.79  time = 24.34
+
+
+
+    itn 137: 0.0055(33)
+ all itn's: -0.00019(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.75  time = 24.43
+
+
+
+    itn 138: -0.0044(29)
+ all itn's: -0.00022(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.73  time = 24.61
+
+
+
+    itn 139: -0.0033(60)
+ all itn's: -0.00024(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.77  time = 24.43
+
+
+
+    itn 140: 0.0023(28)
+ all itn's: -0.00022(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.78  time = 24.47
+
+
+
+    itn 141: 0.0022(30)
+ all itn's: -0.00021(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.78  time = 24.56
+
+
+
+    itn 142: -0.0037(28)
+ all itn's: -0.00023(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.77  time = 24.56
+
+
+
+    itn 143: 0.0034(36)
+ all itn's: -0.00021(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.77  time = 24.50
+
+
+
+    itn 144: -0.0033(29)
+ all itn's: -0.00023(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.91  Q = 0.77  time = 24.49
+
+
+
+    itn 145: 0.0059(37)
+ all itn's: -0.00019(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.73  time = 24.44
+
+
+
+    itn 146: 0.0002(30)
+ all itn's: -0.00018(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.92  Q = 0.74  time = 24.53
+
+
+
+    itn 147: 0.0050(29)
+ all itn's: -0.00015(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.71  time = 24.52
+
+
+
+    itn 148: 0.0019(28)
+ all itn's: -0.00013(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.93  Q = 0.72  time = 24.49
+
+
+
+    itn 149: 0.0061(30)
+ all itn's: -0.00009(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.95  Q = 0.66  time = 24.45
+
+
+
+    itn 150: -0.0020(29)
+ all itn's: -0.00010(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.95  Q = 0.67  time = 24.51
+
+
+
+    itn 151: 0.0077(33)
+ all itn's: -0.00005(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.98  Q = 0.57  time = 24.45
+
+
+
+    itn 152: -0.0014(33)
+ all itn's: -0.00006(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.42
+
+
+
+    itn 153: 0.0027(30)
+ all itn's: -0.00004(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.38
+
+
+
+    itn 154: 0.0015(28)
+ all itn's: -0.00003(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.60  time = 24.50
+
+
+
+    itn 155: 0.0029(29)
+ all itn's: -0.00001(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.60  time = 24.45
+
+
+
+    itn 156: -0.0044(36)
+ all itn's: -0.00004(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.45
+
+
+
+    itn 157: 0.0002(32)
+ all itn's: -0.00004(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.96  Q = 0.61  time = 24.47
+
+
+
+    itn 158: 0.0012(30)
+ all itn's: -0.00003(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.96  Q = 0.62  time = 24.38
+
+
+
+    itn 159: 0.0052(29)
+ all itn's: -0.0000002(2658)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.31
+
+
+
+    itn 160: -0.0018(30)
+ all itn's: -0.00001(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.60  time = 24.36
+
+
+
+    itn 161: -0.0050(30)
+ all itn's: -0.00004(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.98  Q = 0.57  time = 24.38
+
+
+
+    itn 162: -0.0017(40)
+ all itn's: -0.00005(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.32
+
+
+
+    itn 163: 0.0031(28)
+ all itn's: -0.00003(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.34
+
+
+
+    itn 164: -0.0033(28)
+ all itn's: -0.00005(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.58  time = 24.29
+
+
+
+    itn 165: -0.0024(29)
+ all itn's: -0.00007(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.29
+
+
+
+    itn 166: 0.0013(29)
+ all itn's: -0.00006(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.60  time = 24.37
+
+
+
+    itn 167: 0.0032(28)
+ all itn's: -0.00004(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.59  time = 24.35
+
+
+
+    itn 168: 0.0001(28)
+ all itn's: -0.00004(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.97  Q = 0.61  time = 24.27
+
+
+
+    itn 169: 0.0016(28)
+ all itn's: -0.00003(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 0.96  Q = 0.62  time = 24.30
+
+
+
+    itn 170: 0.024(21)
+ all itn's: 0.00011(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.02  Q = 0.42  time = 24.32
+
+
+
+    itn 171: -0.0069(74)
+ all itn's: 0.00007(29)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.02  Q = 0.43  time = 24.34
+
+
+
+    itn 172: 0.0014(27)
+ all itn's: 0.00008(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.44  time = 24.32
+
+
+
+    itn 173: 0.0014(28)
+ all itn's: 0.00008(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.45  time = 24.33
+
+
+
+    itn 174: -0.0017(31)
+ all itn's: 0.00007(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.30
+
+
+
+    itn 175: 0.0016(29)
+ all itn's: 0.00008(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.18
+
+
+
+    itn 176: -0.0041(29)
+ all itn's: 0.00006(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.45  time = 24.16
+
+
+
+    itn 177: -0.0013(28)
+ all itn's: 0.00005(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.19
+
+
+
+    itn 178: -0.0020(28)
+ all itn's: 0.00004(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.17
+
+
+
+    itn 179: 0.0069(66)
+ all itn's: 0.00008(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.21
+
+
+
+    itn 180: 0.0042(33)
+ all itn's: 0.00010(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.12
+
+
+
+    itn 181: -0.0019(29)
+ all itn's: 0.00009(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.17
+
+
+
+    itn 182: -0.0015(27)
+ all itn's: 0.00008(28)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.19
+
+
+
+    itn 183: -0.0054(29)
+ all itn's: 0.00005(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.44  time = 24.18
+
+
+
+    itn 184: -0.0009(28)
+ all itn's: 0.00005(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.45  time = 24.24
+
+
+
+    itn 185: 0.0047(29)
+ all itn's: 0.00007(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.02  Q = 0.43  time = 24.13
+
+
+
+    itn 186: -0.0007(30)
+ all itn's: 0.00007(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.44  time = 24.16
+
+
+
+    itn 187: -0.0021(29)
+ all itn's: 0.00006(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.45  time = 24.11
+
+
+
+    itn 188: -0.0014(29)
+ all itn's: 0.00005(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.20
+
+
+
+    itn 189: 0.0010(30)
+ all itn's: 0.00005(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.20
+
+
+
+    itn 190: -0.0018(29)
+ all itn's: 0.00004(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.48  time = 24.16
+
+
+
+    itn 191: 0.0025(31)
+ all itn's: 0.00006(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.48  time = 24.15
+
+
+
+    itn 192: -0.0075(34)
+ all itn's: 0.00002(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.02  Q = 0.41  time = 24.18
+
+
+
+    itn 193: 0.0045(31)
+ all itn's: 0.00004(26)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.02  Q = 0.40  time = 24.15
+
+
+
+    itn 194: -0.009(11)
+ all itn's: -0.000004(269)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.01  Q = 0.46  time = 24.18
+
+
+
+    itn 195: -0.0002(27)
+ all itn's: -0.000005(268)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.12
+
+
+
+    itn 196: 0.0013(30)
+ all itn's: 0.000002(267)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.48  time = 24.24
+
+
+
+    itn 197: 0.0033(30)
+ all itn's: 0.00002(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.48  time = 24.16
+
+
+
+    itn 198: 0.0010(27)
+ all itn's: 0.00002(27)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.49  time = 24.25
+
+
+
+    itn 199: -0.0042(28)
+ all itn's: 0.000002(264)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.47  time = 24.22
+
+
+
+    itn 200: -0.0012(28)
+ all itn's: -0.000004(263)
+    neval = 1.85531e+08  neval/h-cube = (2, 8)
+    chi2/dof = 1.00  Q = 0.48  time = 24.11
+
+
+
+
+=== 最终结果 ===
+itn   integral        average          chi2/dof        Q
+--------------------------------------------------------
+  1   -0.0049(28)     -0.0049(28)          0.00     1.00
+  2   -0.0016(32)     -0.0032(21)          0.61     0.44
+  3   0.0005(29)      -0.0020(17)          0.86     0.42
+  4   0.0035(32)      -0.0006(15)          1.36     0.25
+  5   -0.0053(66)     -0.0016(18)          0.86     0.49
+  6   0.0016(28)      -0.0010(16)          0.86     0.51
+  7   0.0041(29)      -0.0003(14)          1.04     0.40
+  8   -0.0074(31)     -0.0012(13)          1.41     0.20
+  9   0.0018(29)      -0.0009(12)          1.37     0.21
+ 10   -0.0024(29)     -0.0010(11)          1.27     0.25
+ 11   0.0048(39)      -0.0005(11)          1.37     0.19
+ 12   -0.0008(33)     -0.0005(10)          1.26     0.24
+ 13   -0.0006(30)     -0.00052(97)         1.18     0.29
+ 14   -0.0032(29)     -0.00071(92)         1.16     0.31
+ 15   0.0011(29)      -0.00059(88)         1.11     0.34
+ 16   0.0022(32)      -0.00041(85)         1.09     0.36
+ 17   0.0011(63)      -0.00032(88)         0.90     0.56
+ 18   -0.0005(29)     -0.00033(85)         0.87     0.61
+ 19   -0.0032(31)     -0.00048(82)         0.86     0.62
+ 20   -0.0004(28)     -0.00048(79)         0.83     0.67
+ 21   0.0017(30)      -0.00037(77)         0.82     0.69
+ 22   -0.0005(40)     -0.00038(75)         0.77     0.76
+ 23   -0.0064(28)     -0.00064(73)         0.88     0.63
+ 24   -0.0040(28)     -0.00078(71)         0.89     0.61
+ 25   0.0018(30)      -0.00068(69)         0.88     0.63
+ 26   0.0041(35)      -0.00050(68)         0.92     0.58
+ 27   0.0004(33)      -0.00046(67)         0.89     0.62
+ 28   -0.0003(29)     -0.00046(65)         0.87     0.66
+ 29   0.0048(28)      -0.00027(64)         0.93     0.57
+ 30   -0.0002(29)     -0.00027(62)         0.90     0.61
+ 31   -0.0022(29)     -0.00033(61)         0.89     0.64
+ 32   -0.0020(30)     -0.00039(60)         0.88     0.66
+ 33   0.0011(30)      -0.00034(59)         0.86     0.69
+ 34   0.0022(28)      -0.00027(58)         0.86     0.70
+ 35   0.0003(28)      -0.00025(56)         0.84     0.73
+ 36   -0.0035(39)     -0.00034(56)         0.84     0.74
+ 37   -0.0047(28)     -0.00046(55)         0.86     0.70
+ 38   0.0053(28)      -0.00031(54)         0.93     0.60
+ 39   -0.0012(29)     -0.00033(53)         0.91     0.63
+ 40   -0.0038(28)     -0.00042(52)         0.92     0.61
+ 41   -0.00008(283)   -0.00041(51)         0.90     0.65
+ 42   -0.0061(67)     -0.00054(53)         0.89     0.68
+ 43   -0.0013(28)     -0.00056(52)         0.87     0.71
+ 44   0.0001(28)      -0.00054(51)         0.86     0.73
+ 45   -0.0058(28)     -0.00066(50)         0.90     0.66
+ 46   0.0035(28)      -0.00057(50)         0.92     0.63
+ 47   -0.0011(29)     -0.00058(49)         0.90     0.66
+ 48   -0.0018(29)     -0.00061(48)         0.89     0.68
+ 49   -0.0020(28)     -0.00064(48)         0.88     0.70
+ 50   0.0019(44)      -0.00059(48)         0.87     0.74
+ 51   -0.00001(275)   -0.00057(47)         0.85     0.76
+ 52   -0.0059(30)     -0.00068(46)         0.89     0.70
+ 53   0.0018(30)      -0.00063(46)         0.88     0.71
+ 54   0.0026(29)      -0.00057(45)         0.89     0.70
+ 55   0.0030(30)      -0.00050(45)         0.90     0.69
+ 56   -0.0009(46)     -0.00051(45)         0.87     0.75
+ 57   0.0014(32)      -0.00048(44)         0.86     0.76
+ 58   -0.0057(29)     -0.00057(44)         0.89     0.71
+ 59   -0.0015(28)     -0.00058(43)         0.88     0.73
+ 60   0.0032(29)      -0.00052(43)         0.89     0.71
+ 61   0.0016(30)      -0.00049(42)         0.89     0.72
+ 62   -0.0042(29)     -0.00055(42)         0.90     0.70
+ 63   0.0009(29)      -0.00052(42)         0.89     0.72
+ 64   0.0053(30)      -0.00043(41)         0.92     0.65
+ 65   0.0028(30)      -0.00038(41)         0.93     0.64
+ 66   -0.0042(29)     -0.00044(41)         0.94     0.62
+ 67   0.0002(28)      -0.00043(40)         0.93     0.65
+ 68   0.0028(30)      -0.00038(40)         0.93     0.64
+ 69   0.0017(28)      -0.00035(39)         0.93     0.65
+ 70   -0.0005(30)     -0.00035(39)         0.91     0.68
+ 71   -0.0033(28)     -0.00040(39)         0.92     0.68
+ 72   -0.0009(29)     -0.00040(38)         0.91     0.70
+ 73   -0.0009(31)     -0.00041(38)         0.90     0.72
+ 74   -0.0010(33)     -0.00042(38)         0.88     0.75
+ 75   -0.0008(39)     -0.00042(38)         0.87     0.79
+ 76   -0.0051(28)     -0.00048(37)         0.88     0.75
+ 77   -0.0060(51)     -0.00056(38)         0.89     0.73
+ 78   0.0040(48)      -0.00050(38)         0.89     0.74
+ 79   0.0011(28)      -0.00048(37)         0.89     0.75
+ 80   0.0008(28)      -0.00046(37)         0.88     0.77
+ 81   0.0022(28)      -0.00043(37)         0.88     0.77
+ 82   -0.0053(45)     -0.00049(37)         0.89     0.76
+ 83   0.0034(30)      -0.00044(36)         0.89     0.74
+ 84   0.0021(36)      -0.00041(36)         0.89     0.76
+ 85   0.0036(33)      -0.00036(36)         0.90     0.74
+ 86   -0.0002(29)     -0.00036(36)         0.89     0.76
+ 87   0.0017(28)      -0.00034(35)         0.88     0.77
+ 88   0.0032(31)      -0.00030(35)         0.89     0.76
+ 89   -0.0035(29)     -0.00034(35)         0.89     0.76
+ 90   0.0031(31)      -0.00030(35)         0.89     0.75
+ 91   -0.0040(28)     -0.00034(35)         0.90     0.74
+ 92   -0.0009(29)     -0.00034(34)         0.89     0.76
+ 93   -0.0010(28)     -0.00035(34)         0.89     0.77
+ 94   -0.0005(27)     -0.00035(34)         0.88     0.79
+ 95   -0.0010(36)     -0.00036(34)         0.87     0.81
+ 96   -0.0067(42)     -0.00043(34)         0.89     0.76
+ 97   0.0008(34)      -0.00041(33)         0.88     0.78
+ 98   0.0013(31)      -0.00040(33)         0.88     0.80
+ 99   0.0027(29)      -0.00036(33)         0.88     0.79
+100   0.0006(30)      -0.00036(33)         0.87     0.81
+101   0.0017(29)      -0.00033(33)         0.87     0.82
+102   -0.0039(33)     -0.00037(33)         0.87     0.81
+103   0.0039(36)      -0.00033(32)         0.88     0.80
+104   -0.0024(28)     -0.00035(32)         0.88     0.81
+105   0.0052(29)      -0.00030(32)         0.90     0.76
+106   -0.0019(32)     -0.00031(32)         0.89     0.78
+107   0.0041(29)      -0.00027(32)         0.90     0.75
+108   0.0038(29)      -0.00023(31)         0.91     0.74
+109   -0.0010(29)     -0.00024(31)         0.90     0.75
+110   0.0021(31)      -0.00022(31)         0.90     0.76
+111   -0.0042(32)     -0.00025(31)         0.91     0.75
+112   0.0016(30)      -0.00024(31)         0.90     0.76
+113   0.0006(28)      -0.00023(31)         0.90     0.77
+114   -0.010(11)      -0.00032(32)         0.89     0.80
+115   -0.0019(28)     -0.00033(32)         0.88     0.81
+116   -0.0018(27)     -0.00034(32)         0.88     0.82
+117   0.0032(29)      -0.00031(31)         0.88     0.81
+118   0.0020(28)      -0.00029(31)         0.88     0.81
+119   0.000006(2971)  -0.00029(31)         0.88     0.83
+120   -0.0018(28)     -0.00030(31)         0.87     0.84
+121   0.0040(33)      -0.00027(31)         0.88     0.82
+122   0.0020(27)      -0.00025(31)         0.88     0.83
+123   0.0009(33)      -0.00024(30)         0.87     0.84
+124   -0.0054(36)     -0.00028(30)         0.88     0.82
+125   0.0035(32)      -0.00025(30)         0.89     0.81
+126   0.0030(28)      -0.00023(30)         0.89     0.81
+127   0.0013(29)      -0.00021(30)         0.89     0.82
+128   -0.0056(28)     -0.00026(30)         0.90     0.78
+129   -0.0017(32)     -0.00027(30)         0.90     0.79
+130   0.0014(30)      -0.00026(30)         0.89     0.80
+131   0.0003(29)      -0.00025(29)         0.89     0.82
+132   0.0023(28)      -0.00023(29)         0.89     0.82
+133   0.0002(34)      -0.00023(29)         0.88     0.83
+134   -0.0068(45)     -0.00028(29)         0.90     0.80
+135   0.0043(31)      -0.00024(29)         0.90     0.78
+136   0.0012(29)      -0.00023(29)         0.90     0.79
+137   0.0055(33)      -0.00019(29)         0.92     0.75
+138   -0.0044(29)     -0.00022(29)         0.92     0.73
+139   -0.0033(60)     -0.00024(29)         0.91     0.77
+140   0.0023(28)      -0.00022(29)         0.91     0.78
+141   0.0022(30)      -0.00021(28)         0.91     0.78
+142   -0.0037(28)     -0.00023(28)         0.91     0.77
+143   0.0034(36)      -0.00021(28)         0.91     0.77
+144   -0.0033(29)     -0.00023(28)         0.91     0.77
+145   0.0059(37)      -0.00019(28)         0.93     0.73
+146   0.0002(30)      -0.00018(28)         0.92     0.74
+147   0.0050(29)      -0.00015(28)         0.93     0.71
+148   0.0019(28)      -0.00013(28)         0.93     0.72
+149   0.0061(30)      -0.00009(28)         0.95     0.66
+150   -0.0020(29)     -0.00010(27)         0.95     0.67
+151   0.0077(33)      -0.00005(27)         0.98     0.57
+152   -0.0014(33)     -0.00006(27)         0.97     0.59
+153   0.0027(30)      -0.00004(27)         0.97     0.59
+154   0.0015(28)      -0.00003(27)         0.97     0.60
+155   0.0029(29)      -0.00001(27)         0.97     0.60
+156   -0.0044(36)     -0.00004(27)         0.97     0.59
+157   0.0002(32)      -0.00004(27)         0.96     0.61
+158   0.0012(30)      -0.00003(27)         0.96     0.62
+159   0.0052(29)      -0.0000002(2658)     0.97     0.59
+160   -0.0018(30)     -0.00001(26)         0.97     0.60
+161   -0.0050(30)     -0.00004(26)         0.98     0.57
+162   -0.0017(40)     -0.00005(26)         0.97     0.59
+163   0.0031(28)      -0.00003(26)         0.97     0.59
+164   -0.0033(28)     -0.00005(26)         0.97     0.58
+165   -0.0024(29)     -0.00007(26)         0.97     0.59
+166   0.0013(29)      -0.00006(26)         0.97     0.60
+167   0.0032(28)      -0.00004(26)         0.97     0.59
+168   0.0001(28)      -0.00004(26)         0.97     0.61
+169   0.0016(28)      -0.00003(26)         0.96     0.62
+170   0.024(21)       0.00011(28)          1.02     0.42
+171   -0.0069(74)     0.00007(29)          1.02     0.43
+172   0.0014(27)      0.00008(28)          1.01     0.44
+173   0.0014(28)      0.00008(28)          1.01     0.45
+174   -0.0017(31)     0.00007(28)          1.01     0.46
+175   0.0016(29)      0.00008(28)          1.00     0.47
+176   -0.0041(29)     0.00006(28)          1.01     0.45
+177   -0.0013(28)     0.00005(28)          1.01     0.46
+178   -0.0020(28)     0.00004(28)          1.00     0.47
+179   0.0069(66)      0.00008(28)          1.01     0.46
+180   0.0042(33)      0.00010(28)          1.01     0.46
+181   -0.0019(29)     0.00009(28)          1.01     0.46
+182   -0.0015(27)     0.00008(28)          1.00     0.47
+183   -0.0054(29)     0.00005(27)          1.01     0.44
+184   -0.0009(28)     0.00005(27)          1.01     0.45
+185   0.0047(29)      0.00007(27)          1.02     0.43
+186   -0.0007(30)     0.00007(27)          1.01     0.44
+187   -0.0021(29)     0.00006(27)          1.01     0.45
+188   -0.0014(29)     0.00005(27)          1.01     0.46
+189   0.0010(30)      0.00005(27)          1.00     0.47
+190   -0.0018(29)     0.00004(27)          1.00     0.48
+191   0.0025(31)      0.00006(27)          1.00     0.48
+192   -0.0075(34)     0.00002(27)          1.02     0.41
+193   0.0045(31)      0.00004(26)          1.02     0.40
+194   -0.009(11)      -0.000004(269)       1.01     0.46
+195   -0.0002(27)     -0.000005(268)       1.00     0.47
+196   0.0013(30)      0.000002(267)        1.00     0.48
+197   0.0033(30)      0.00002(27)          1.00     0.48
+198   0.0010(27)      0.00002(27)          1.00     0.49
+199   -0.0042(28)     0.000002(264)        1.00     0.47
+200   -0.0012(28)     -0.000004(263)       1.00     0.48
+
+积分结果 = -0.000004(263)
+Q值 = 0.48
+相对误差 = 6498.20%
+

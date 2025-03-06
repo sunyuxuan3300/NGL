@@ -1,0 +1,1292 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Full 2-loop hemi-soft
+\end_layout
+
+\begin_layout Subsection
+Two real emission
+\end_layout
+
+\begin_layout Standard
+For hemi-soft function, to clarify our strategy, firstly we consider two
+ real emission along 
+\begin_inset Formula $n,\bar{n}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(\omega_{L},\omega_{R},b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\int\frac{d^{d}q}{\left(2\pi\right)^{d}}\frac{d^{d}k}{\left(2\pi\right)^{d}}\\
+ &  & \qquad\times\frac{\left|\mathcal{A}^{(X)}\right|^{2}}{\left(q_{0}k_{0}\right)^{\alpha}}\mathcal{F}\left(\omega_{L},\omega_{R},b_{L},b_{R}\right)
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $C^{(X)}$
+\end_inset
+
+ is color factor, for 
+\begin_inset Formula $X=C_{A},n_{f}$
+\end_inset
+
+, 
+\begin_inset Formula $C^{(C_{A})}=C_{F}C_{A},\,C^{(n_{f})}=C_{F}n_{f}T_{F}$
+\end_inset
+
+.
+ To get trivial 
+\begin_inset Formula $C_{F}^{2}$
+\end_inset
+
+ term, we use Abelian exponential theorm from NLO result.
+ The corresponding squared matrix elements 
+\begin_inset Formula $\left|\mathcal{A}^{(X)}\right|^{2}$
+\end_inset
+
+ are given by 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\mathcal{A}^{(C_{A})}\right|^{2} & = & \frac{4\left(k_{-}\left(2k_{+}+q_{+}\right)+q_{-}\left(k_{+}+2q_{+}\right)\right)}{k_{+}k_{-}q_{+}q_{-}\left(k_{+}+q_{+}\right)\left(k_{-}+q_{-}\right)}-\frac{2\left(1-\epsilon\right)\left(q_{-}k_{+}-k_{-}q_{+}\right)^{2}}{\left(k\cdot q\right)^{2}\left(k_{+}+q_{+}\right)^{2}\left(k_{-}+q_{-}\right)^{2}}\\
+ &  & -\frac{2\left(k_{-}^{2}q_{+}\left(2k_{+}+q_{+}\right)+q_{-}^{2}k_{+}\left(k_{+}+2q_{+}\right)+2k_{-}q_{-}\left(k_{+}^{2}-k_{+}q_{+}+q_{+}^{2}\right)\right)}{\left(k\cdot q\right)k_{+}k_{-}q_{+}q_{-}\left(k_{+}+q_{+}\right)\left(k_{-}+q_{-}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\mathcal{A}^{(n_{f})}\right|^{2} & = & \frac{2}{\left(k\cdot q\right)^{2}}\left(\frac{k_{+}q_{-}+k_{-}q_{+}-2k\cdot q}{\left(k_{+}+q_{+}\right)\left(k_{-}+q_{-}\right)}-\frac{k_{-}q_{-}}{\left(k_{-}+q_{-}\right)^{2}}-\frac{k_{+}q_{+}}{\left(k_{+}+q_{+}\right)^{2}}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\mathcal{A}^{(C_{F}^{2})}\right|^{2} & = & -\frac{16}{k_{+}k_{-}q_{+}q_{-}}
+\end{eqnarray*}
+
+\end_inset
+
+The measurement function 
+\begin_inset Formula $\mathcal{F}\left(\omega_{L},\omega_{R},b_{L},b_{R}\right)$
+\end_inset
+
+ defined by hemisphere phase-space restrictions, contains 
+\begin_inset Formula $\delta\left(k^{2}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\left(q^{2}\right)$
+\end_inset
+
+ factors which put two emitted gluons on-shell.
+ The impact parameter 
+\begin_inset Formula $b_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{R}$
+\end_inset
+
+ for each hemisphere also be included.
+ Explicitly, 
+\begin_inset Formula $\mathcal{F}\left(\omega_{L},\omega_{R},b_{L},b_{R}\right)$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{F}\left(\omega_{L},\omega_{R},b_{L},b_{R}\right) & = & \frac{1}{2!}\left(-2\pi i\right)^{2}\delta^{+}\left(k^{2}\right)\delta^{+}\left(q^{2}\right)\\
+ &  & \times\left[\theta\left(k^{-}-k^{+}\right)\theta\left(q^{+}-q^{-}\right)\delta\left(k^{+}-\omega_{R}\right)\delta\left(q^{-}-\omega_{L}\right)e^{i\bm{k}_{T}\cdot\bm{b}_{R}}e^{i\bm{q}_{T}\cdot\bm{b}_{L}}\right.\\
+ &  & \,\,\,+\theta\left(q^{-}-q^{+}\right)\theta\left(k^{+}-k^{-}\right)\delta\left(q^{+}-\omega_{R}\right)\delta\left(k^{-}-\omega_{L}\right)e^{i\bm{q}_{T}\cdot\bm{b}_{R}}e^{i\bm{k}_{T}\cdot\bm{b}_{L}}\\
+ &  & \,\,\,+\theta\left(k^{-}-k^{+}\right)\theta\left(q^{-}-q^{+}\right)\delta\left(k^{+}+q^{+}-\omega_{R}\right)\delta\left(\omega_{L}\right)e^{i\left(\bm{q}_{T}+\bm{k}_{T}\right)\cdot\bm{b}_{R}}\\
+ &  & \left.\,\,\,+\theta\left(k^{+}-k^{-}\right)\theta\left(q^{+}-q^{-}\right)\delta\left(k^{-}+q^{-}-\omega_{L}\right)\delta\left(\omega_{R}\right)e^{i\left(\bm{q}_{T}+\bm{k}_{T}\right)\cdot\bm{b}_{L}}\right]
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta^{+}\left(k^{2}\right)=\delta\left(k^{2}\right)\theta\left(k_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To get integrate soft function,
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(x_{L},x_{R},b_{L},b_{R},\epsilon\right) & = & \int_{0}^{x_{L}}d\omega_{L}\int_{0}^{x_{R}}d\omega_{R}\,\,\mathcal{S}_{2}\left(\omega_{L},\omega_{R},b_{L},b_{R},\epsilon\right)
+\end{eqnarray*}
+
+\end_inset
+
+in our case, we consider 
+\begin_inset Formula $x_{L},x_{R}\rightarrow\infty$
+\end_inset
+
+ limit, then 
+\begin_inset Formula $\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right)\equiv\mathcal{S}_{2}\left(x_{L},x_{R},b_{L},b_{R},\epsilon\right)|_{x_{L,R}\rightarrow\infty}$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\int\frac{d^{d}q}{\left(2\pi\right)^{d}}\frac{d^{d}k}{\left(2\pi\right)^{d}}\\
+ &  & \qquad\times\frac{\left|\mathcal{A}^{(X)}\right|^{2}}{\left(2q_{0}2k_{0}\right)^{\alpha}}\mathcal{F}\left(b_{L},b_{R}\right)
+\end{eqnarray*}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{F}\left(\omega_{L},\omega_{R},b_{L},b_{R}\right) & = & \frac{1}{2!}\left(-2\pi i\right)^{2}\delta^{+}\left(k^{2}\right)\delta^{+}\left(q^{2}\right)\\
+ &  & \times\left[\theta\left(k^{-}-k^{+}\right)\theta\left(q^{+}-q^{-}\right)e^{i\bm{k}_{T}\cdot\bm{b}_{R}}e^{i\bm{q}_{T}\cdot\bm{b}_{L}}\right.\\
+ &  & \,\,\,+\theta\left(q^{-}-q^{+}\right)\theta\left(k^{+}-k^{-}\right)e^{i\bm{q}_{T}\cdot\bm{b}_{R}}e^{i\bm{k}_{T}\cdot\bm{b}_{L}}\\
+ &  & \,\,\,+\theta\left(k^{-}-k^{+}\right)\theta\left(q^{-}-q^{+}\right)e^{i\left(\bm{q}_{T}+\bm{k}_{T}\right)\cdot\bm{b}_{R}}\\
+ &  & \,\,\,\left.+\theta\left(k^{+}-k^{-}\right)\theta\left(q^{+}-q^{-}\right)e^{i\left(\bm{q}_{T}+\bm{k}_{T}\right)\cdot\bm{b}_{L}}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Parameterization
+\end_layout
+
+\begin_layout Standard
+To calculate integral, appropriate parameterization schemes should be introduced.
+ Following [arXiv:1812.08690v2], here we introduce:
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & p_{T}=\sqrt{\left(k_{+}+q_{+}\right)\left(k_{-}+l_{-}\right)},\quad y=\frac{k_{+}+q_{+}}{k_{-}+q_{-}},\quad a=\sqrt{\frac{k_{-}q_{+}}{k_{+}q_{-}}},\quad b=\sqrt{\frac{k_{+}k_{-}}{q_{+}q_{-}}}
+\end{eqnarray*}
+
+\end_inset
+
+and the vectors in transverse space
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{x}\left(\phi_{q}\right) & = & \begin{pmatrix}1 & 0 & 0\\
+0 & \text{\ensuremath{\cos\phi_{q}}} & -\sin\phi_{q}\\
+0 & \sin\phi_{q} & \text{\ensuremath{\cos\phi_{q}}}
+\end{pmatrix},\quad R_{z}\left(\theta_{q}\right)=\begin{pmatrix}\cos\theta_{q} & -\sin\theta_{q} & 0\\
+\sin\theta_{q} & \text{\ensuremath{\cos\theta_{q}}} & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\bm{q}_{T} & = & q_{T}R_{x}\left(\phi_{q}\right)R_{z}\left(\theta_{q}\right)\left(1,0,\cdots\right)\\
+\bm{k}_{T} & = & k_{T}R_{x}\left(\phi_{q}\right)R_{z}\left(\theta_{q}\right)\left(\cos\theta_{kq},\sin\theta_{kq}\cos\phi_{k},\sin\theta_{kq}\sin\phi_{k},\cdots\right)\\
+\bm{b}_{L} & = & b_{L}\left(1,0,0\right)\\
+\bm{b}_{R} & = & b_{R}\left(\cos\theta_{LR},\sin\theta_{LR},0\right)
+\end{eqnarray*}
+
+\end_inset
+
+such that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\bm{b}_{L}^{2} & = & b_{L}^{2},\quad\bm{b}_{R}^{2}=b_{R}^{2},\quad\bm{b}_{R}\cdot\bm{b}_{L}=b_{L}b_{R}\cos\theta_{LR},\\
+\bm{q}_{T}\cdot\bm{k}_{T} & = & q_{T}k_{T}\cos\theta_{kq},\quad
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this parameterization, together with
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & d\Omega_{d-2}=\sin^{d-3}\theta\,d\Omega_{d-3}
+\end{eqnarray*}
+
+\end_inset
+
+the angular part of integral becomes, 
+\begin_inset Formula $\phi_{q}=\theta_{5},\phi_{k}=\theta_{6}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\int d\Omega_{d-2}^{(q)}d\Omega_{d-2}^{(k)} & = & \frac{4\pi^{-2\epsilon}}{\Gamma\left(-\epsilon\right)^{2}}\int_{-1}^{1}d\cos\theta_{kq}d\cos\theta_{q}d\cos\theta_{5}d\cos\theta_{6}\\
+ &  & \times\sin^{-1-2\epsilon}\theta_{kq}\sin^{-1-2\epsilon}\theta_{q}\sin^{-2-2\epsilon}\theta_{5}\sin^{-2-2\epsilon}\theta_{6}
+\end{eqnarray*}
+
+\end_inset
+
+here we introduce:
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & \cos\theta_{kq}=1-2t_{kq},\quad\cos\theta_{q}=1-2t_{q},\quad\cos\theta_{5,6}=1-2t_{5,6}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+integrand expression
+\end_layout
+
+\begin_layout Standard
+The first term of 
+\begin_inset Formula $\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{1}{4\left(2\pi\right)^{2d}}\sum_{X}\int dk_{+}dk_{-}dq_{+}dq_{-}d^{2-2\epsilon}\bm{k}_{T}d^{2-2\epsilon}\bm{q}_{T}\\
+ &  & \times\frac{1}{2!}\left(-2\pi i\right)^{2}\delta^{+}\left(k_{+}k_{-}-k_{T}^{2}\right)\delta^{+}\left(q_{+}q_{-}-q_{T}^{2}\right)\theta\left(k^{-}-k^{+}\right)\theta\left(q^{+}-q^{-}\right)\\
+ &  & \times\frac{C^{(X)}\left|\mathcal{A}^{(X)}\right|^{2}}{\left(2q_{0}2k_{0}\right)^{\alpha}}e^{i\bm{k}_{T}\cdot\bm{b}_{R}}e^{i\bm{q}_{T}\cdot\bm{b}_{L}}
+\end{eqnarray*}
+
+\end_inset
+
+In parameterization, 
+\begin_inset Formula $\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right)$
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{1}{4\left(2\pi\right)^{2d}}\int_{0}^{\infty}dk_{+}dk_{-}dq_{+}dq_{-}\,dk_{T}\,dq_{T}\times\frac{1}{4}k_{T}^{-2\epsilon}q_{T}^{-2\epsilon}\\
+ &  & \times\frac{4\pi^{-2\epsilon}}{\Gamma\left(-\epsilon\right)^{2}}\int_{-1}^{1}d\cos\theta_{kq}d\cos\theta_{q}d\cos\theta_{5}d\cos\theta_{6}\\
+ &  & \times\sin^{-1-2\epsilon}\theta_{kq}\sin^{-1-2\epsilon}\theta_{q}\sin^{-2-2\epsilon}\theta_{5}\sin^{-2-2\epsilon}\theta_{6}\\
+ &  & \times\frac{1}{2!}\left(-2\pi i\right)^{2}\theta\left(k^{-}-k^{+}\right)\theta\left(q^{+}-q^{-}\right)\delta\left(k_{T}-\sqrt{k_{+}k_{-}}\right)\delta\left(q_{T}-\sqrt{q_{+}q_{-}}\right)\\
+ &  & \times\frac{\left|\mathcal{A}^{(X)}\right|^{2}}{\left(q_{+}+q_{-}\right)^{\alpha}\left(k_{+}+k_{-}\right)^{\alpha}}e^{i\bm{k}_{T}\cdot\bm{b}_{R}}e^{i\bm{q}_{T}\cdot\bm{b}_{L}}
+\end{eqnarray*}
+
+\end_inset
+
+substituted with 
+\begin_inset Formula $p_{T},y,a,b,t$
+\end_inset
+
+, and jacobian 
+\begin_inset Formula $J=\frac{\partial\left(k_{+},k_{-},q_{+},q_{-}\right)}{\partial\left(p_{T},a,b,y\right)}=\frac{2abp_{T}^{3}}{\left(a+b\right)^{2}\left(1+ab\right)^{2}y}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{1}{16\left(2\pi\right)^{2d}}\frac{32\pi^{1/2-2\epsilon}}{\Gamma\left(-\epsilon\right)\Gamma\left(1/2-\epsilon\right)}\frac{1}{2!}\left(-2\pi i\right)^{2}\\
+ &  & \times\int_{0}^{\infty}dp_{T}\,dy\,da\,db\,\int_{0}^{1}dt_{kq}\,dt_{q}\,dt_{5}\\
+ &  & \times2^{-1+2\alpha}a^{1-2\epsilon}b^{1-\alpha-2\epsilon}\left(a+b\right)^{-2+2\alpha+2\epsilon}\left(1+ab\right)^{-2+2\alpha+2\epsilon}p_{T}^{3-2\alpha-4\epsilon}\\
+ &  & \times y^{-1+\alpha}\left((a+b)+ay\left(1+ab\right)\right)^{-\alpha}\left(ab\left(1+y\right)+a^{2}+y\right)^{-\alpha}\\
+ &  & \times\left(4t_{kq}\bar{t}_{kq}\right)^{-1/2-\epsilon}\left(4t_{l}\bar{t}_{l}\right)^{-1/2-\epsilon}\left(4t_{5}\bar{t}_{5}\right)^{-1-\epsilon}\theta\left(\frac{a}{1+ab}-\frac{y}{a+b}\right)\theta\left(\frac{ay}{a+b}-\frac{1}{1+ab}\right)\\
+ &  & \times\left|\mathcal{A}^{(X)}\right|^{2}e^{ip_{T}\mathcal{M}}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\bar{t}_{i}=1-t_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathcal{M}$
+\end_inset
+
+ is real function given by:
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{M} & \equiv & \frac{\sqrt{a}}{\sqrt{a+b}\sqrt{1+ab}}\left[b_{L}\left(1-2t_{q}\right)\right.\\
+ &  & \quad\left.+b_{R}b\cos\left(2\Delta\theta\right)\left(-1+2t_{kq}\left(1-2t_{q}\right)+2t_{q}-4\left(1-2t_{5}\right)\sqrt{t_{kq}\bar{t}_{kq}}\sqrt{t_{q}\bar{t}_{q}}\right)\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Turn to two hemi-sphere phase space constrain 
+\begin_inset Formula $\theta-$
+\end_inset
+
+function, the domain of integral will be reduced to
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{\infty}dp_{T}\,dy\,da\,db & \rightarrow & \int_{0}^{\infty}dp_{T}\int_{1}^{\infty}da\int_{0}^{\infty}db\int_{\frac{a+b}{a(1+ab)}}^{\frac{a(a+b)}{1+ab}}dy
+\end{eqnarray*}
+
+\end_inset
+
+which means 
+\begin_inset Formula $n-\bar{n}$
+\end_inset
+
+ symmetry is broken.
+ Thus our final integrand expression is
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{1}{16\left(2\pi\right)^{2d}}\frac{32\pi^{1/2-2\epsilon}}{\Gamma\left(-\epsilon\right)\Gamma\left(1/2-\epsilon\right)}\frac{1}{2!}\left(-2\pi i\right)^{2}\\
+ &  & \times\int_{0}^{\infty}dp_{T}\int_{1}^{\infty}da\int_{0}^{\infty}db\int_{\frac{a+b}{a(1+ab)}}^{\frac{a(a+b)}{1+ab}}dy\,\int_{0}^{1}dt_{kq}\,dt_{q}\,dt_{5}\\
+ &  & \times2^{-1+2\alpha}a^{1-2\epsilon}b^{1-\alpha-2\epsilon}\left(a+b\right)^{-2+2\alpha+2\epsilon}\left(1+ab\right)^{-2+2\alpha+2\epsilon}p_{T}^{3-2\alpha-4\epsilon}\\
+ &  & \times y^{-1+\alpha}\left((a+b)+ay\left(1+ab\right)\right)^{-\alpha}\left(ab\left(1+y\right)+a^{2}+y\right)^{-\alpha}\\
+ &  & \times\left(4t_{kq}\bar{t}_{kq}\right)^{-1/2-\epsilon}\left(4t_{l}\bar{t}_{l}\right)^{-1/2-\epsilon}\left(4t_{5}\bar{t}_{5}\right)^{-1-\epsilon}\left|\mathcal{A}^{(X)}\right|^{2}e^{ip_{T}\mathcal{M}}\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calculation stragety
+\end_layout
+
+\begin_layout Standard
+To calculate the integral, identify the IR/UV divergence is necessary.
+ Rapidity divergence emerged from 
+\begin_inset Formula $y^{-1+\alpha}$
+\end_inset
+
+ factor, in order to use Plus-distribution, one needs transform the integral
+ variable,
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & y\rightarrow\frac{a\left(a+b\right)}{1+ab}\frac{y}{y+a^{2}-1}
+\end{eqnarray*}
+
+\end_inset
+
+such that,
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{\frac{a+b}{a(1+ab)}}^{\frac{a(a+b)}{1+ab}}dy & \rightarrow & \int_{1}^{\infty}dy\,\frac{a\left(a^{2}-1\right)\left(a+b\right)}{\left(1+ab\right)\left(a^{2}-1+y\right)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+the previous factor 
+\begin_inset Formula $y^{-1+\alpha}$
+\end_inset
+
+ ,
+\begin_inset Formula 
+\begin{eqnarray*}
+y^{-1+\alpha} & \rightarrow & a^{-1+\alpha}\left(a+b\right)^{-1+\alpha}\left(1+ab\right)^{1-\alpha}y^{-1+\alpha}\left(a^{2}-1+y\right)^{1-\alpha}
+\end{eqnarray*}
+
+\end_inset
+
+Then,
+\begin_inset Formula 
+\begin{eqnarray*}
+y & \rightarrow & y^{-1}\\
+a & \rightarrow & a^{-1}
+\end{eqnarray*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{2}\left(b_{L},b_{R},\epsilon\right) & = & g^{4}C^{(X)}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{1}{16\left(2\pi\right)^{2d}}\frac{32\pi^{1/2-2\epsilon}}{\Gamma\left(-\epsilon\right)\Gamma\left(1/2-\epsilon\right)}\frac{1}{2!}\left(-2\pi i\right)^{2}\\
+ &  & \times\int_{0}^{\infty}dp_{T}\int_{0}^{1}da\int_{0}^{\infty}db\int_{0}^{1}dy\,\int_{0}^{1}dt_{kq}\,dt_{q}\,dt_{5}\\
+ &  & \times2^{-1+2\alpha}a^{1-2\epsilon}b^{1-\alpha-2\epsilon}\left(1-a^{2}\right)\left(a+b\right)^{-2+\alpha+2\epsilon}\left(1+ab\right)^{-2+\alpha+2\epsilon}p_{T}^{3-2\alpha-4\epsilon}\\
+ &  & \times\left(a^{2}\left(1-y\right)+y\right)^{-1+\alpha}\left(1+a^{2}\left(1-y\right)+y\right)^{-\alpha}\left(a^{2}\left(2-y\right)+y\right)^{-\alpha}\\
+ &  & \times\left(4t_{kq}\bar{t}_{kq}\right)^{-1/2-\epsilon}\left(4t_{l}\bar{t}_{l}\right)^{-1/2-\epsilon}\left(4t_{5}\bar{t}_{5}\right)^{-1-\epsilon}\left|\mathcal{A}^{(X)}\right|^{2}e^{ip_{T}\mathcal{M}}\\
+\end{eqnarray*}
+
+\end_inset
+
+Immediately, collinear divergence from 
+\begin_inset Formula $y^{-1+\alpha}$
+\end_inset
+
+ are disappear.
+\end_layout
+
+\begin_layout Standard
+One needs to separate divergence for 
+\begin_inset Formula $a\rightarrow1,t_{kq}\rightarrow0$
+\end_inset
+
+, use
+\begin_inset Formula 
+\begin{eqnarray*}
+a & = & 1-u\left(1-v\right)\\
+t_{kq} & = & \frac{u^{2}v}{1-u\left(1-v\right)}
+\end{eqnarray*}
+
+\end_inset
+
+such that poles will be 
+\begin_inset Formula $u^{-1+n}$
+\end_inset
+
+, also, consider
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{\infty}db & = & \int_{0}^{1}db+\int_{1}^{\infty}db
+\end{eqnarray*}
+
+\end_inset
+
+for second term, we transform 
+\begin_inset Formula 
+\begin{eqnarray*}
+b & \rightarrow & \frac{1}{b}
+\end{eqnarray*}
+
+\end_inset
+
+In order to deal with spurious divergence 
+\begin_inset Formula $\left(4t_{5}\bar{t}_{5}\right)^{-1-\epsilon}$
+\end_inset
+
+, we use 
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & t_{5}=\frac{1}{2}t_{5}^{\prime},\qquad t_{5}=1-\frac{1}{2}t_{5}^{\prime}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, we conclude our stragety to following steps:
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta\left(\frac{a}{1+ab}-\frac{y}{a+b}\right)\theta\left(\frac{ay}{a+b}-\frac{1}{1+ab}\right) & \Longrightarrow & \int_{0}^{\infty}dp_{T}\int_{1}^{\infty}da\int_{0}^{\infty}db\int_{\frac{a+b}{a(1+ab)}}^{\frac{a(a+b)}{1+ab}}dy\\
+y\rightarrow\frac{a\left(a+b\right)}{1+ab}\frac{1/y}{1/y+a^{2}-1},\quad a\rightarrow\frac{1}{a} & \Longrightarrow & \int_{0}^{\infty}dp_{T}\int_{0}^{1}da\int_{0}^{\infty}db\int_{0}^{1}dy\\
+\int_{0}^{\infty}db=\int_{0}^{1}db+\int_{1}^{\infty}db\quad b\rightarrow\frac{1}{b} & \Longrightarrow & \int_{0}^{\infty}dp_{T}\int_{0}^{1}da\int_{0}^{1}db\int_{0}^{1}dy\,F\left(b\right)\\
+ &  & +\int_{0}^{\infty}dp_{T}\int_{0}^{1}da\int_{0}^{1}db\int_{0}^{1}dy\,F\left(1/b\right)\\
+a=1-u\left(1-v\right),\quad t_{kq}=\frac{u^{2}v}{1-u\left(1-v\right)} & \Longrightarrow & \int_{0}^{\infty}dp_{T}\int_{0}^{1}dudv\int_{0}^{1}db\int_{0}^{1}dy\int_{0}^{1}dt_{q}dt_{5}\\
+t_{5}=\frac{1}{2}t_{5}^{\prime},\qquad t_{5}=1-\frac{1}{2}t_{5}^{\prime} & \Longrightarrow & \int_{0}^{\infty}dp_{T}\int_{0}^{1}dudv\int_{0}^{1}db\int_{0}^{1}dy\int_{0}^{1}dt_{q}dt_{5}^{\prime`}\left(F_{1}+F_{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+For each integrate variable, we use Plus-distribution 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{x^{1+\epsilon}} & = & -\frac{1}{\epsilon}+\left[\frac{1}{x}\right]_{+}+\epsilon\left[\frac{\log\left(x\right)}{x^{2}}\right]_{+}+\cdots
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Calculation result
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $C_{F}n_{f}T_{F}$
+\end_inset
+
+ term
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\mathcal{A}^{(n_{f})}\right|^{2} & = & \frac{2}{\left(k\cdot q\right)^{2}}\left(\frac{k_{+}q_{-}+k_{-}q_{+}-2k\cdot q}{\left(k_{+}+q_{+}\right)\left(k_{-}+q_{-}\right)}-\frac{k_{-}q_{-}}{\left(k_{-}+q_{-}\right)^{2}}-\frac{k_{+}q_{+}}{\left(k_{+}+q_{+}\right)^{2}}\right)
+\end{eqnarray*}
+
+\end_inset
+
+After transformation, the pole structure will be 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{5}^{\prime-1-\epsilon}
+\end{eqnarray*}
+
+\end_inset
+
+Namely, no other divergence from integral.
+\end_layout
+
+\begin_layout Standard
+Then
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{2} & = & -g^{4}C_{F}n_{f}T_{F}\left(\frac{\mu^{2}e^{\gamma_{E}}}{4\pi}\right)^{2\epsilon}\frac{i^{2\left(\alpha+2\epsilon\right)}}{16\left(2\pi\right)^{2d}}\frac{32\pi^{1/2-2\epsilon}2^{-6\epsilon}b_{L}^{2\left(\alpha+2\epsilon\right)}}{\Gamma\left(-\epsilon\right)\Gamma\left(1/2-\epsilon\right)}\frac{1}{2!}\left(-2\pi i\right)^{2}I
+\end{eqnarray*}
+
+\end_inset
+
+for 
+\begin_inset Formula $I$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\epsilon^{-1} & : & 4*\left(\frac{1328}{39}\pi^{2}-\frac{10939}{33}\right)
+\end{eqnarray*}
+
+\end_inset
+
+Higher oder term 
+\begin_inset Formula $\mathcal{O}\left(\epsilon^{0}\right)$
+\end_inset
+
+ dependent on 
+\begin_inset Formula $x$
+\end_inset
+
+, which can not be calculate pertubatively.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $C_{F}C_{A}$
+\end_inset
+
+ term, after transformation, the pole structure will be a
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{5}^{\prime-1-\epsilon}b^{-1-\alpha-2\epsilon}
+\end{eqnarray*}
+
+\end_inset
+
+which contains 
+\begin_inset Formula $1/\epsilon^{2}$
+\end_inset
+
+ pole.
+ for 
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\epsilon^{-2} & : & \left(-\frac{247}{20}+\frac{1203}{140}\pi-\frac{459}{70}\pi^{2}+\frac{205}{14}\zeta_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+due to 
+\begin_inset Formula $\left(\cdots+x\cdots\right)^{\alpha+2\epsilon}$
+\end_inset
+
+ structure, if expand 
+\begin_inset Formula $x$
+\end_inset
+
+, the dependence of 
+\begin_inset Formula $x$
+\end_inset
+
+ do not enter leading singularity.
+\end_layout
+
+\begin_layout Subsection
+1loop
+\end_layout
+
+\begin_layout Standard
+1loop
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{1}\left(b_{L},b_{R},\epsilon\right) & = & g^{2}C_{F}\left(\frac{\mu^{2}e^{-\gamma_{E}}}{4\pi}\right)^{\epsilon}\mu^{\alpha}\int\frac{d^{d}k}{\left(2\pi\right)^{d}}\frac{2}{\left(k_{+}+k_{-}\right)^{\alpha}k_{+}k_{-}}\\
+ &  & \times\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)\left[\theta\left(k^{-}-k^{+}\right)e^{i\bm{k}_{T}\cdot\bm{b}_{R}}+\theta\left(k^{+}-k^{-}\right)e^{i\bm{k}_{T}\cdot\bm{b}_{L}}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+k_{+} & \rightarrow & k_{T}\sqrt{y}\\
+k_{-} & \rightarrow & k_{T}/\sqrt{y}\\
+\cos\theta & \rightarrow & 1-2t
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta\left(k^{-}-k^{+}\right) & \rightarrow & \int_{0}^{\infty}dk_{T}\int_{0}^{1}dy\\
+\theta\left(k^{+}-k^{-}\right) & \rightarrow & \int_{0}^{\infty}dk_{T}\int_{1}^{\infty}dy
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{1}\left(b_{L},b_{R},\epsilon\right) & = & g^{2}C^{(X)}\left(\frac{\mu^{2}e^{-\gamma_{E}}}{4\pi}\right)^{\epsilon}\mu^{\alpha}2^{-2\epsilon}\left(2\pi\right)^{-4+2\epsilon}\left(-2\pi i\right)\frac{\pi^{\frac{1}{2}-\epsilon}}{\Gamma\left(\frac{1}{2}-\epsilon\right)}\int dk_{T}dy\\
+ &  & \times k_{T}^{-1-\alpha-2\epsilon}t^{-1/2-\epsilon}\bar{t}^{-1/2-\epsilon}\frac{y^{-1+\alpha/2}}{\left(1+y\right)^{\alpha}}\left(e^{ik_{T}b_{R}\left(1-2t\right)}\theta\left(k^{-}-k^{+}\right)+e^{ik_{T}b_{R}\left(1-2t\right)}\theta\left(k^{+}-k^{-}\right)\right)\\
+ & = & g^{2}C^{(X)}\left(\frac{\mu^{2}e^{-\gamma_{E}}}{4\pi}\right)^{\epsilon}\mu^{\alpha}2^{-2\epsilon}\left(2\pi\right)^{-4+2\epsilon}\left(-2\pi i\right)\Gamma\left(-\alpha-2\epsilon\right)\frac{\pi^{\frac{1}{2}-\epsilon}}{\Gamma\left(\frac{1}{2}-\epsilon\right)}\\
+ &  & \times\left[\left(ib_{R}\right)^{\alpha+2\epsilon}\int_{0}^{1}dy\,t^{-1/2-\epsilon}\bar{t}^{-1/2-\epsilon}\frac{y^{-1+\alpha/2}}{\left(1+y\right)^{\alpha}}\left(2t-1\right)^{\alpha+2\epsilon}\right.\\
+ &  & \quad+\left(ib_{L}\right)^{\alpha+2\epsilon}\int_{1}^{\infty}dy\,t^{-1/2-\epsilon}\bar{t}^{-1/2-\epsilon}\frac{y^{-1+\alpha/2}}{\left(1+y\right)^{\alpha}}\left(2t-1\right)^{\alpha+2\epsilon}
+\end{eqnarray*}
+
+\end_inset
+
+to calculate real parts of 
+\begin_inset Formula $\mathcal{S}_{1}$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+i^{\alpha+2\epsilon} & \rightarrow & \cos\left(\frac{\pi}{2}\left(\alpha+2\epsilon\right)\right),\quad2t-1\rightarrow\left|1-2t\right|
+\end{eqnarray*}
+
+\end_inset
+
+define
+\begin_inset Formula 
+\[
+b_{L,R}^{2}=\left(\frac{2e^{-\gamma_{E}}}{\mu}\right)^{2}e^{L_{L,R}}
+\]
+
+\end_inset
+
+and here we drop 
+\begin_inset Formula $i$
+\end_inset
+
+, such that 
+\begin_inset Formula $-2\pi i\rightarrow-2\pi$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{1}\left(b_{L},b_{R},\epsilon\right) & = & \frac{g^{2}}{4\pi^{2}}C_{F}\left(\left(\frac{1}{\alpha\epsilon}-\frac{1}{2\epsilon^{2}}\right)+\frac{1}{2\alpha}\left(L_{L}+L_{R}\right)+\frac{L_{L}^{2}+L_{R}^{2}+\frac{\pi^{2}}{3}}{8}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+EFT
+\end_layout
+
+\begin_layout Subsection
+Factorization Theorem
+\end_layout
+
+\begin_layout Standard
+We also use EFT to reproduce the result dervied from Full 2-loop soft function.
+ According to ref(JHEP12(2016)018) , soft function can be factorized to
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{s}^{(1)}\left(\tau_{L},\tau_{R}\right) & = & \left\langle \tilde{\mathcal{H}}_{0}^{S(0)}\left(\tau_{R}\right)\otimes\tilde{\mathcal{S}}_{1}^{(1)}\left(\left\{ n\right\} ,\tau_{L}\right)\right\rangle +\left\langle \tilde{\mathcal{H}}_{0}^{S(1)}\left(\tau_{R}\right)\otimes\tilde{\mathcal{S}}_{1}^{(0)}\left(\left\{ n\right\} ,\tau_{L}\right)\right\rangle \\
+ &  & +\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\left(\left\{ n_{1}\right\} ,\tau_{R}\right)\otimes\tilde{\mathcal{S}}_{2}^{(0)}\left(\left\{ n,n_{1}\right\} ,\tau_{L}\right)\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\left\langle \cdots\otimes\cdots\right\rangle $
+\end_inset
+
+ means the angular convolution integral.
+ Considering power counting,
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{S}}_{1}^{(0)}\left(\left\{ n\right\} ,\tau_{L}\right) & = & \tilde{\mathcal{H}}_{0}^{S(0)}\left(\tau_{R}\right)=\tilde{\mathcal{S}}_{2}^{(0)}\left(\left\{ n,n_{1}\right\} ,\tau_{L}\right)=\mathbb{I}
+\end{eqnarray*}
+
+\end_inset
+
+then the non-trivial term for 
+\begin_inset Formula $\tilde{s}^{(1)}$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{s}^{(1)}\left(\tau_{L},\tau_{R}\right) & = & \left\langle \tilde{\mathcal{S}}_{1}^{(1)}\right\rangle +\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+and 
+\begin_inset Formula $\tilde{s}^{(2)}$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{s}^{(2)}\left(\tau_{L},\tau_{R}\right) & = & \left\langle \tilde{\mathcal{S}}_{1}^{(2)}\right\rangle +\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle +\left\langle \tilde{\mathcal{H}}_{1}^{S(2)}\otimes\mathbb{I}\right\rangle +\left\langle \tilde{\mathcal{H}}_{2}^{S(2)}\otimes\mathbb{I}\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+according to definition,
+\begin_inset Formula 
+\begin{eqnarray*}
+S\left(\omega_{L},\omega_{R}\right) & = & \frac{1}{N_{c}}\sum_{X}\text{Tr}\left\langle 0\left|S_{\bar{n}}S_{n}^{\dagger}\right|X\right\rangle \left\langle 0\left|S_{n}S_{\bar{n}}^{\dagger}\right|X\right\rangle \delta\left(\omega_{R}-n\cdot P_{R}\right)\delta\left(\omega_{L}-\bar{n}\cdot P_{L}\right)\\
+\mathcal{S}_{m+1}\left(\left\{ n,\text{\underbar{n}}\right\} ,\omega_{L}\right) & = & \sum_{X}\left|\left\langle 0\left|S_{a,\bar{n}}^{\dagger}S_{b,n}^{\dagger}S_{1,n_{1}}^{\dagger}\cdots S_{m,n_{m}}^{\dagger}\right|X\right\rangle \right|^{2}\delta\left(\omega_{L}-\bar{n}\cdot P_{L}\right)\\
+\mathcal{H}_{m}^{S}\left(\left\{ \text{\underbar{n}}\right\} ,\omega_{R}\right) & = & \prod_{i=1}^{m}\int\frac{dE_{i}E_{i}^{d-3}}{\left(2\pi\right)^{d-2}}\left|\mathcal{M}_{m}^{S}\left\{ \text{\underbar{p}}\right\} \right\rangle \left\langle \mathcal{M}_{m}^{S}\left\{ \text{\underbar{p}}\right\} \right|\delta\left(\omega_{L}-n\cdot P_{R}\right)\theta_{R}\left(\left\{ \text{\underbar{p}}\right\} \right)
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\left\{ \text{\underbar{p}}\right\} =\left\{ p_{1},\cdots,p_{m}\right\} $
+\end_inset
+
+, and color matrix
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\mathcal{M}_{m}^{S}\left\{ \text{\underbar{p}}\right\} \right\rangle  & = & \left\langle \left\{ \text{\underbar{p}}\right\} \left|S_{n}S_{\bar{n}}^{\dagger}\right|0\right\rangle 
+\end{eqnarray*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{S}_{m}\left(\left\{ \text{\underbar{n}}\right\} ,\omega_{L}\right) & = & \mathbb{I}-g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\int\frac{d^{d-1}k}{\left(2\pi\right)^{d-1}2E_{k}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\\
+ &  & \qquad\times\theta\left(k_{+}-k_{-}\right)\delta\left(\omega_{L}-k_{-}\right)+\cdots\\
+\mathcal{H}_{1}\left(\left\{ n_{1}\right\} ,\omega_{L}\right) & = & \frac{4\pi}{\alpha_{s}}\frac{2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}}{\left(2\pi\right)^{2-2\epsilon}}\int dE_{1}E_{1}^{1-2\epsilon}\frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\theta\left(\bar{n}\cdot p_{1}-n\cdot p_{1}\right)\delta\left(\omega_{R}-n\cdot p_{1}\right)\mathbb{I}
+\end{eqnarray*}
+
+\end_inset
+
+Obviously, soft function 
+\begin_inset Formula $S\left(\omega_{L},\omega_{R}\right)$
+\end_inset
+
+ contains parton radiation emissions from two collinear wilson lines (thrust,
+ quark and anti-quark), which can factorized to two parts 
+\begin_inset Formula $\mathcal{S}_{m+1},\mathcal{H}_{m}^{S}.$
+\end_inset
+
+ Hard parton emissions from two wilson lines are contained in 
+\begin_inset Formula $\mathcal{H}_{m}^{S}$
+\end_inset
+
+ and be constrained at right-hemi shpere by 
+\begin_inset Formula $\theta_{R}\left(\left\{ \text{\underbar{p}}\right\} \right)$
+\end_inset
+
+, with hierarchy 
+\begin_inset Formula $Q\gg\omega_{R}\gg\omega_{L}$
+\end_inset
+
+.
+ Soft parton emissions with one quark or anti-quark 
+\begin_inset Formula $S_{a,\bar{n}}^{\dagger}S_{b,n}^{\dagger}$
+\end_inset
+
+ are described by 
+\begin_inset Formula $\mathcal{S}_{m+1}$
+\end_inset
+
+ and can emitted to both right and left sphere.
+\end_layout
+
+\begin_layout Standard
+Functions 
+\begin_inset Formula $S,\tilde{s},\mathcal{S},\tilde{\mathcal{S}},\mathcal{H},\tilde{\mathcal{H}}$
+\end_inset
+
+ are related by Laplacian transformation
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{s}\left(\tau_{L},\tau_{R},\mu\right) & = & \int_{0}^{\infty}d\omega_{L}d\omega_{R}\,e^{-\omega_{L}/\left(\tau_{L}e^{\gamma_{E}}\right)}e^{-\omega_{R}/\left(\tau_{R}e^{\gamma_{E}}\right)}S\left(\omega_{L},\omega_{R},\mu\right)\\
+\tilde{\mathcal{S}}\left(\tau_{L},\mu\right) & = & \int d\omega_{L}\,e^{-\omega_{L}/\left(\tau_{L}e^{\gamma_{E}}\right)}\mathcal{S}\left(\omega_{L},\mu\right)\\
+\tilde{\mathcal{H}}\left(\tau_{R},\mu\right) & = & \int d\omega_{R}\,e^{-\omega_{R}/\left(\tau_{R}e^{\gamma_{E}}\right)}\mathcal{H}\left(\omega_{R},\mu\right)
+\end{eqnarray*}
+
+\end_inset
+
+The soft function 
+\begin_inset Formula $\tilde{\mathcal{S}}$
+\end_inset
+
+ represents the left-hemi sphere contribution, while the hard function 
+\begin_inset Formula $\tilde{\mathcal{H}}$
+\end_inset
+
+ contains contributions from right-hemi sphere,
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{S}} & \rightarrow & \text{Left}\\
+\tilde{\mathcal{H}} & \rightarrow & \text{Right}
+\end{eqnarray*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{s}^{(1)} & = & \underbrace{\left\langle \tilde{\mathcal{S}}_{1}^{(1)}\right\rangle }_{\text{Left 1-loop}}+\underbrace{\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\right\rangle }_{\text{Right 1-loop}}\\
+\tilde{s}^{(2)} & = & \underbrace{\left\langle \tilde{\mathcal{S}}_{1}^{(2)}\right\rangle }_{\text{Left 2-loop, VR+RR}}+\underbrace{\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle }_{\text{Left-1\&Right-1}}+\underbrace{\left\langle \tilde{\mathcal{H}}_{1}^{S(2)}\otimes\mathbb{I}\right\rangle }_{\text{Right 2-loop, VR}}+\underbrace{\left\langle \tilde{\mathcal{H}}_{2}^{S(2)}\otimes\mathbb{I}\right\rangle }_{\text{Right 2-loop, RR}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+TMD-EFT
+\end_layout
+
+\begin_layout Standard
+To derived TMD hemi soft function by EFT factorization theorem, we just
+ replace Laplacian kernel to Fourier kernel,
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{-\omega/\left(\tau e^{\gamma_{E}}\right)} & \rightarrow & e^{-i\bm{p}_{T}\cdot\bm{b}}
+\end{eqnarray*}
+
+\end_inset
+
+such that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{S}}_{m}\left(\left\{ \text{\underbar{n}}\right\} ,\bm{q}_{L}\right) & = & \mathbb{I}-g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\int\frac{d^{d}k}{\left(2\pi\right)^{d}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\\
+ &  & \qquad\times\theta\left(k_{+}-k_{-}\right)\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)\delta\left(\bm{q}_{L}-\bm{k}_{T}\right)+\cdots\\
+\tilde{\mathcal{H}}_{1}\left(\left\{ n_{1}\right\} ,\bm{q}_{R}\right) & = & \frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle \frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\theta\left(p_{1-}-p_{1+}\right)\left(-2\pi i\right)\delta^{+}\left(p_{1}^{2}\right)\delta\left(\bm{q}_{R}-\bm{p}_{1T}\right)\mathbb{I}
+\end{eqnarray*}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle  & \rightarrow & \left[d\Omega\right]\,\int dE_{1}
+\end{eqnarray*}
+
+\end_inset
+
+we denote it as energy integral and angular part are preserved.
+ Then 
+\begin_inset Formula 
+\begin{eqnarray*}
+s\left(b_{L},b_{R},\mu\right) & = & \int d\bm{q}_{L}d\bm{q}_{R}\,e^{-i\bm{q}_{L}\cdot\bm{b}_{L}}e^{-i\bm{q}_{R}\cdot\bm{b}_{R}}\tilde{s}\left(\bm{q}_{L},\bm{q}_{R},\mu\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+2loop
+\end_layout
+
+\begin_layout Subsubsection
+Trivial Term
+\end_layout
+
+\begin_layout Standard
+Obviously,
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{F.T}.\left\langle \tilde{\mathcal{S}}_{1}^{(2)}\right\rangle  & = & \text{Full soft 2-loop phase4 VR+RR}\\
+\text{F.T.}\left[\left\langle \tilde{\mathcal{H}}_{1}^{S(2)}\otimes\mathbb{I}\right\rangle +\left\langle \tilde{\mathcal{H}}_{2}^{S(2)}\otimes\mathbb{I}\right\rangle \right] & = & \text{Full soft 2-loop phase3 VR+RR}
+\end{eqnarray*}
+
+\end_inset
+
+To vertify that, we show details of 
+\begin_inset Formula $\left\langle \tilde{\mathcal{H}}_{2}^{S(2)}\otimes\mathbb{I}\right\rangle $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{F.T.}\left[\left\langle \tilde{\mathcal{H}}_{2}^{S(2)}\otimes\mathbb{I}\right\rangle \right] & = & \text{numeric factor}\times\frac{1}{2!}\int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\frac{d^{d}p_{2}}{\left(2\pi\right)^{d}}\frac{1}{\left(p_{1+}+p_{1-}\right)^{\alpha}}\frac{1}{\left(p_{2+}+p_{2-}\right)^{\alpha}}\\
+ &  & \times\left[C_{F}^{2}\left|\mathcal{A}^{(C_{F}^{2})}\right|^{2}+C_{F}C_{A}\left|\mathcal{A}^{(C_{A})}\right|^{2}+C_{F}n_{f}T_{F}\left|\mathcal{A}^{(n_{f})}\right|^{2}\right]\\
+ &  & \times\theta\left(p_{1-}-p_{1+}\right)\theta\left(p_{2-}-p_{2+}\right)\left(-2\pi i\right)^{2}\delta^{+}\left(p_{1}^{2}\right)\delta^{+}\left(p_{2}^{2}\right)e^{-i\left(\bm{p}_{1}+\bm{p}_{2}\right)\cdot\bm{b}_{R}}
+\end{eqnarray*}
+
+\end_inset
+
+which is exatly equivalent to 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Full soft 2-loop phase3 RR.
+\end_layout
+
+\begin_layout Subsubsection
+Non-trivial term
+\end_layout
+
+\begin_layout Standard
+At 2-loop, the only non-trivial term is 
+\begin_inset Formula $\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle $
+\end_inset
+
+, to compare to Full 2-loop soft function, we introduce rapidy regulator
+ 
+\begin_inset Formula $(2p_{0})^{-\alpha}$
+\end_inset
+
+, ingrediants are
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{H}}_{1}^{S(1)} & = & \frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle \frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\theta\left(p_{1-}-p_{1+}\right)\left(-2\pi i\right)\delta^{+}\left(p_{1}^{2}\right)\delta\left(\bm{q}_{R}-\bm{p}_{1T}\right)\\
+\tilde{\mathcal{S}}_{2}^{(1)}\left(\left\{ \text{\underbar{n}}\right\} ,\bm{q}_{L}\right) & = & -g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\int\frac{d^{d}k}{\left(2\pi\right)^{d}}\frac{1}{\left(2k_{0}\right)^{\alpha}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\times\theta\left(k_{+}-k_{-}\right)\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)\delta\left(\bm{q}_{L}-\bm{k}_{T}\right)
+\end{eqnarray*}
+
+\end_inset
+
+where we choose 
+\begin_inset Formula $i=0,1,2$
+\end_inset
+
+ particle directions along to 
+\begin_inset Formula $\bar{n},n,n_{1}$
+\end_inset
+
+ respectively,
+\begin_inset Formula 
+\begin{eqnarray*}
+\sum_{\left(ij\right)}T_{i}\cdot T_{j}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)} & = & -2\left[\left(C_{F}-\frac{C_{A}}{2}\right)\frac{\bar{n}\cdot n}{\left(\bar{n}\cdot k\right)\left(n\cdot k\right)}+\frac{C_{A}}{2}\left(\frac{\bar{n}\cdot n_{1}}{\left(\bar{n}\cdot k\right)\left(n_{1}\cdot k\right)}+\frac{n\cdot n_{1}}{\left(n\cdot k\right)\left(n_{1}\cdot k\right)}\right)\right]
+\end{eqnarray*}
+
+\end_inset
+
+and then we define
+\begin_inset Formula $\left[\int\right]\left[d\Omega\right]\cdots\times\cdots=\left\langle \cdots\otimes\cdots\right\rangle $
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{F.T.}\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle  & = & -\int d\bm{q}_{L}d\bm{q}_{R}\,e^{-i\bm{q}_{L}\cdot\bm{b}_{L}}e^{-i\bm{q}_{R}\cdot\bm{b}_{R}}\left[\int\right]\\
+ &  & \times\frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle \frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\\
+ &  & \times\theta\left(p_{1-}-p_{1+}\right)\left(-2\pi i\right)\delta^{+}\left(p_{1}^{2}\right)\delta\left(\bm{q}_{R}-\bm{p}_{1T}\right)\\
+ &  & \times g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\int\frac{d^{d}k}{\left(2\pi\right)^{d}}\frac{1}{\left(2k_{0}\right)^{\alpha}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\\
+ &  & \times\theta\left(k_{+}-k_{-}\right)\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)\delta\left(\bm{q}_{L}-\bm{k}_{T}\right)
+\end{eqnarray*}
+
+\end_inset
+
+Finally, we get
+\begin_inset Formula 
+\begin{eqnarray*}
+s^{(2)}\left(b_{L},b_{R},\mu\right) & = & \text{Full soft 2-loop phase3+4 VR+RR}\\
+ &  & -\left[\int d\Omega\right]\int\frac{d^{d}k}{\left(2\pi\right)^{d}}\left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle e^{-i\bm{k}_{T}\cdot\bm{b}_{L}}e^{-i\bm{p}_{1T}\cdot\bm{b}_{R}}\\
+ &  & \times\frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\theta\left(p_{1-}-p_{1+}\right)\left(-2\pi i\right)\delta^{+}\left(p_{1}^{2}\right)\\
+ &  & \times g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\frac{1}{\left(2k_{0}\right)^{\alpha}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\times\theta\left(k_{+}-k_{-}\right)\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Explicit 2-loop integral
+\end_layout
+
+\begin_layout Standard
+The next stage is calculate 
+\begin_inset Formula $\text{F.T.}\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle $
+\end_inset
+
+ explicitly, we introduce parametrization
+\begin_inset Formula 
+\begin{align*}
+R_{x}\left(\phi_{p_{1}}\right) & =\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\phi_{p_{1}} & -\sin\phi_{p_{1}}\\
+0 & \sin\phi_{p_{1}} & \cos\phi_{p_{1}}
+\end{pmatrix}\\
+R_{z}\left(\theta_{p_{1}}\right) & =\begin{pmatrix}\cos\theta_{p_{1}} & -\sin\theta_{p_{1}} & 0\\
+\sin\theta_{p_{1}} & \cos\theta_{p_{1}} & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+p_{1}^{\mu} & =E_{1}n_{1}^{\mu},\qquad p_{1}^{2}=E_{1}^{2}n_{1}^{2}=0\Longrightarrow n_{1}^{2}=0\\
+n_{1}^{\mu} & =\left(1,\bm{n}_{T},\cos\theta_{1}\right)\\
+\bm{p}_{T} & =E_{1}\sin\theta_{1}\bm{n}_{T}=E_{1}\sin\theta_{1}R_{x}\left(\phi_{p_{1}}\right)R_{z}\left(\theta_{p_{1}}\right).\left(1,0,0\right)\\
+\bm{k}_{T} & =k_{T}R_{x}\left(\phi_{p_{1}}\right)R_{z}\left(\theta_{p_{1}}\right).\left(\cos\theta_{kp_{1}},\sin\theta_{kp_{1}}\cos\phi_{k},\sin\theta_{kp_{1}}\sin\phi_{k}\right)\\
+\bm{b}_{R} & =b_{R}\left(1,0,0\right)\\
+\bm{b}_{L} & =b_{L}\left(\cos\theta_{LR},\sin\theta_{LR},0\right)
+\end{align*}
+
+\end_inset
+
+hence hard function is (
+\begin_inset Formula $-2\pi i\rightarrow-2\pi$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{H}}_{1}^{S(1)} & \rightarrow & \left\langle \int\frac{d^{d}p_{1}}{\left(2\pi\right)^{d}}\right\rangle \frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{n\cdot\bar{n}}{\left(n\cdot p_{1}\right)\left(\bar{n}\cdot p_{1}\right)}\theta\left(p_{1-}-p_{1+}\right)\left(-2\pi i\right)\delta^{+}\left(p_{1}^{2}\right)e^{-i\bm{p}_{1T}\cdot\bm{b}_{R}}\\
+ & = & -\frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}d\Omega_{d-1}\int\frac{E_{1}^{d-2}dE_{1}}{\left(2\pi\right)^{d-1}}\frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{1}{2E_{1}}\frac{n\cdot\bar{n}}{E_{1}^{2}\left(n\cdot n_{1}\right)\left(\bar{n}\cdot n_{1}\right)}\theta\left(n_{1-}-n_{1+}\right)e^{-i\bm{p}_{1T}\cdot\bm{b}_{R}}\\
+ & = & -\frac{4\pi}{\alpha_{s}}2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}\left[\frac{2d\Omega_{d-1}}{4\pi}\right]\int\frac{E_{1}^{-1-2\epsilon}dE_{1}}{\left(2\pi\right)^{d-2}}\frac{1}{\left(2E_{1}\right)^{\alpha}}\frac{1}{\left(n\cdot n_{1}\right)\left(\bar{n}\cdot n_{1}\right)}e^{-ib_{R}E_{1}\sin\theta_{1}\cos\theta_{p}}|_{1\geq\cos\theta_{1}\geq0}\\
+ & = & -\frac{4\pi}{\alpha_{s}}\frac{2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}}{\left(2\pi\right)^{d-2}}\left[\frac{2d\Omega_{d-1}}{4\pi}\right]\frac{\Gamma\left(-\alpha-2\epsilon\right)\left(ib_{R}\sin\theta_{1}\cos\theta_{p}\right)^{\alpha+2\epsilon}}{2^{\alpha}\sin^{2}\theta_{1}}|_{1\geq\cos\theta_{1}\geq0}
+\end{eqnarray*}
+
+\end_inset
+
+and angular part 
+\begin_inset Formula 
+\begin{eqnarray*}
+d\Omega_{d-1} & = & \sin^{1-2\epsilon}\theta_{1}\sin^{-2\epsilon}\theta_{p_{1}}\sin^{-1-2\epsilon}\phi_{p_{1}}d\theta_{1}d\theta_{p_{1}}d\phi_{p_{1}}d\Omega_{d-4}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next is soft function,
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & k_{+}\rightarrow\frac{k_{T}}{\sqrt{y}},\qquad k_{-}\rightarrow k_{T}\sqrt{y}\\
+ &  & \delta^{+}\left(k^{2}\right)\rightarrow\delta^{+}\left(k_{+}k_{-}-\left|\bm{k}_{\perp}\right|^{2}\right)\rightarrow\delta^{+}\left(k_{T}^{2}-\left|\bm{k}_{\perp}\right|^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{S}}_{2}^{(1)}\left(\left\{ \text{\underbar{n}}\right\} ,\bm{q}_{L}\right) & \rightarrow & -g_{s}^{2}\tilde{\mu}^{2\epsilon}\sum_{\left(ij\right)}T_{i}\cdot T_{j}\int\frac{d^{d}k}{\left(2\pi\right)^{d}}e^{-i\bm{k}_{T}\cdot\bm{b}_{L}}\frac{1}{\left(2k_{0}\right)^{\alpha}}\frac{n_{i}\cdot n_{j}}{\left(n_{i}\cdot k\right)\left(n_{j}\cdot k\right)}\\
+ &  & \times\theta\left(k_{+}-k_{-}\right)\left(-2\pi i\right)\delta^{+}\left(k^{2}\right)\\
+ & = & -g_{s}^{2}\tilde{\mu}^{2\epsilon}\int\frac{dk_{T}dyd\Omega_{d-2}^{\prime}}{\left(2\pi\right)^{d-1}}\underbrace{\frac{1}{2}}_{\text{jaco}}\underbrace{\frac{k_{T}^{1-2\epsilon}}{2k_{T}}}_{\delta,d^{d-2}\bm{k}_{T}}\underbrace{\frac{k_{T}}{y}}_{\text{jaco}}e^{-i\bm{k}_{T}\cdot\bm{b}_{L}}\frac{\theta\left(\frac{k_{T}}{\sqrt{y}}-k_{T}\sqrt{y}\right)}{\left(2k_{0}\right)^{\alpha}}\\
+ &  & \times2\left[\left(C_{F}-\frac{C_{A}}{2}\right)\frac{2}{k_{+}k_{-}}+\frac{C_{A}}{2}\left(\frac{n_{1-}}{k_{-}\left(n_{1}\cdot k\right)}+\frac{n_{1+}}{k_{+}\left(n_{1}\cdot k\right)}\right)\right]|_{k_{\pm}\rightarrow k_{T},\sqrt{y}}\\
+ & = & -g_{s}^{2}\tilde{\mu}^{2\epsilon}\int\frac{dk_{T}dyd\Omega_{d-2}^{\prime}}{\left(2\pi\right)^{d-1}}\frac{1}{2}\frac{k_{T}^{1-2\epsilon}}{2k_{T}}\frac{k_{T}}{y}e^{-i\bm{k}_{T}\cdot\bm{b}_{L}}\frac{1}{\left(2k_{0}\right)^{\alpha}}\\
+ &  & \times2\left\{ \left(C_{F}-\frac{C_{A}}{2}\right)\frac{2}{k_{T}^{2}}+\frac{C_{A}}{2}\left[\frac{2}{\left(\hat{\theta}_{1}^{2}k_{T}\sqrt{y}+k_{T}/\sqrt{y}-2\hat{\theta}_{1}k_{T}\cos\theta_{kp}\right)}\left(\frac{1}{k_{T}\sqrt{y}}+\frac{\sqrt{y}\hat{\theta}_{1}^{2}}{k_{T}}\right)\right]\right\} |_{0\leq y\leq1}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{\theta}_{1}=\sqrt{\frac{1-\cos\theta_{1}}{1+\cos\theta_{1}}}$
+\end_inset
+
+, and 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{n_{1-}}{k_{-}\left(n_{1}\cdot k\right)} & = & \frac{n_{1-}}{k_{-}\left(\frac{n_{1+}k_{-}+n_{1-}k_{+}}{2}-\bm{n}_{1\perp}\cdot\bm{k}_{T}\right)}\\
+ & = & \frac{2}{k_{-}\left(\frac{n_{1+}}{n_{1-}}k_{-}+k_{+}-2\frac{\left|\bm{n}_{1\perp}\right|}{n_{1-}}\left|\bm{k}_{T}\right|\cos\theta_{kp}\right)}\\
+ & = & \frac{2}{k_{-}\left(\hat{\theta}_{1}^{2}k_{-}+k_{+}-2\hat{\theta}_{1}k_{T}\cos\theta_{kp}\right)}\\
+\frac{n_{1+}}{k_{+}\left(n_{1}\cdot k\right)} & = & \frac{2\hat{\theta}_{1}^{2}}{k_{+}\left(\hat{\theta}_{1}^{2}k_{-}+k_{+}-2\hat{\theta}_{1}k_{T}\cos\theta_{kp}\right)}\\
+e^{-i\bm{k}_{T}\cdot\bm{b}_{L}} & = & \exp\left\{ -ik_{T}b_{L}\left[\cos\theta_{LR}\left(\cos\theta_{kp_{1}}\cos\theta_{p_{1}}-\cos\phi_{k}\sin\theta_{kp_{1}}\sin\theta_{p_{1}}\right)\right]\right\} \\
+ &  & \times\exp\left\{ -ik_{T}b_{L}\left[\sin\theta_{LR}\left(\cos\theta_{p_{1}}\cos\phi_{k}\cos\phi_{p_{1}}\sin\theta_{kp_{1}}+\cos\theta_{kp_{1}}\cos\phi_{p_{1}}\sin\theta_{p_{1}}-\sin\theta_{kp_{1}}\sin\phi_{k}\sin\phi_{p_{1}}\right)\right]\right\} \\
+d\Omega_{d-2}^{\prime} & = & \left(\sin\theta_{kp_{1}}\right)^{-2\epsilon}\left(\sin\phi_{k}\right)^{-1-2\epsilon}d\theta_{kp_{1}}d\phi_{k}d\Omega_{d-4}^{\prime}
+\end{eqnarray*}
+
+\end_inset
+
+then
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{\mathcal{S}}_{2}^{(1)}\left(\left\{ \text{\underbar{n}}\right\} ,\bm{q}_{L}\right) & \rightarrow & -g_{s}^{2}\tilde{\mu}^{2\epsilon}\int\frac{dk_{T}dyd\Omega_{d-2}^{\prime}}{\left(2\pi\right)^{d-1}}\frac{1}{2}\frac{k_{T}^{1-2\epsilon}}{2k_{T}}\frac{k_{T}}{y}\exp\left\{ \cdots\right\} \frac{1}{\left(k_{T}\sqrt{y}+k_{T}/\sqrt{y}\right)^{\alpha}}\\
+ &  & \times2\left\{ \left(C_{F}-\frac{C_{A}}{2}\right)\frac{2}{k_{T}^{2}}+\frac{C_{A}}{2}\left[\frac{2}{\left(\hat{\theta}_{1}^{2}k_{T}\sqrt{y}+k_{T}/\sqrt{y}-2\hat{\theta}_{1}k_{T}\cos\theta_{kp_{1}}\right)}\left(\frac{1}{k_{T}\sqrt{y}}+\frac{\sqrt{y}\hat{\theta}_{1}^{2}}{k_{T}}\right)\right]\right\} |_{0\leq y\leq1}\\
+ & = & -\frac{g_{s}^{2}\tilde{\mu}^{2\epsilon}}{\left(2\pi\right)^{d-1}}\frac{2\pi^{-\epsilon}\Gamma\left(-\alpha-2\epsilon\right)}{\Gamma\left(-\epsilon\right)}\int_{0}^{1}dyd\theta_{kp_{1}}d\phi_{k}\,y^{-1+\frac{\alpha}{2}}\left(1+y\right)^{-\alpha}\\
+ &  & \times\sin^{-2\epsilon}\theta_{kp_{1}}\sin^{-1-2\epsilon}\phi_{k}\left(\text{expterm}\right)^{\alpha+2\epsilon}\left[\frac{2\sqrt{y}\hat{\theta}_{1}\cos\theta_{kp_{1}}}{1+y\hat{\theta}_{1}^{2}-2\sqrt{y}\hat{\theta}_{1}\cos\theta_{kp_{1}}}C_{A}+2C_{F}\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Non-trivial angular convolution
+\end_layout
+
+\begin_layout Standard
+We take 
+\begin_inset Formula $i^{2\left(\alpha+2\epsilon\right)}\rightarrow\cos\left(\pi\left(\alpha+2\epsilon\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(\text{expterm}\right)^{\alpha+2\epsilon}\rightarrow\left|\text{expterm}\right|^{\alpha+2\epsilon}$
+\end_inset
+
+ to get real part, and then
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{F.T.}\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle  & = & \frac{2}{\alpha_{s}}\frac{2C_{F}g_{s}^{2}\tilde{\mu}^{2\epsilon}}{\left(2\pi\right)^{d-2}}\frac{g_{s}^{2}\tilde{\mu}^{2\epsilon}}{\left(2\pi\right)^{d-1}}\frac{2^{-\alpha}\pi^{-\epsilon}\Gamma\left(-\alpha-2\epsilon\right)^{2}}{\Gamma\left(-\epsilon\right)}\frac{2\pi^{-\epsilon}}{\Gamma\left(-\epsilon\right)}\cos\left(\pi\left(\alpha+2\epsilon\right)\right)b_{L}^{\alpha+2\epsilon}b_{R}^{\alpha+2\epsilon}\\
+ &  & \int_{0}^{1}dy\int_{0}^{\pi}d\theta_{kp_{1}}d\phi_{k}d\theta_{p_{1}}d\phi_{p_{1}}\int_{0}^{\frac{\pi}{2}}d\theta_{1}\\
+ &  & \times\sin^{1-2\epsilon}\theta_{1}\sin^{-2\epsilon}\theta_{p_{1}}\sin^{-2\epsilon}\theta_{kp_{1}}\sin^{-1-2\epsilon}\phi_{k}\sin^{-1-2\epsilon}\phi_{p_{1}}\\
+ &  & \times\frac{\left|\sin\theta_{1}\cos\theta_{p_{1}}\right|^{\alpha+2\epsilon}}{\sin^{2}\theta_{1}}y^{-1+\frac{\alpha}{2}}\left(1+y\right)^{-\alpha}\left|\text{expterm}\right|^{\alpha+2\epsilon}\\
+ &  & \times\left[\frac{2\sqrt{y}\hat{\theta}_{1}\cos\theta_{kp_{1}}}{1+y\hat{\theta}_{1}^{2}-2\sqrt{y}\hat{\theta}_{1}\cos\theta_{kp_{1}}}C_{A}+2C_{F}\right]
+\end{eqnarray*}
+
+\end_inset
+
+where we use these following parameterization such that plus-distribution
+ are available,
+\begin_inset Formula 
+\begin{eqnarray*}
+\cos\theta_{kp_{1}} & \rightarrow & 1-2t_{kp_{1}},\quad\cos\theta_{p_{1}}\rightarrow1-2t_{p_{1}},\quad\cos\phi_{p_{1}}\rightarrow1-2t_{5},\quad\cos\phi_{k}\rightarrow1-2t_{6}\\
+\cos\theta_{1} & \rightarrow & 1-t_{1}\\
+I\left(t_{5,6}\right) & \rightarrow & I\left(\frac{1}{2}t_{5,6}^{\prime}\right)+I\left(1-\frac{1}{2}t_{5,6}^{\prime}\right)
+\end{eqnarray*}
+
+\end_inset
+
+and poles are
+\begin_inset Formula 
+\begin{align*}
+\text{CA-term} & \rightarrow t_{1}^{-\frac{1}{2}\left(1-\alpha\right)}y^{-\frac{1}{2}\left(1-\alpha\right)}t_{5}^{\prime-1-\epsilon}t_{6}^{\prime-1-\epsilon}\frac{\Gamma\left(-\alpha-2\epsilon\right)^{2}}{\Gamma\left(-\epsilon\right)^{2}}\\
+\text{CF-term} & \rightarrow t_{1}^{-1+\frac{\alpha}{2}}y^{-1+\frac{\alpha}{2}}t_{5}^{\prime-1-\epsilon}t_{6}^{\prime-1-\epsilon}\frac{\Gamma\left(-\alpha-2\epsilon\right)^{2}}{\Gamma\left(-\epsilon\right)^{2}}
+\end{align*}
+
+\end_inset
+
+with redefinition
+\begin_inset Formula 
+\begin{eqnarray*}
+b_{L,R} & = & \left(\frac{2e^{-\gamma_{E}}}{\mu}\right)e^{\frac{1}{2}L_{L,R}}\\
+b_{L}^{\alpha+2\epsilon}b_{R}^{\alpha+2\epsilon} & \rightarrow & \left(2e^{-\gamma_{E}}\right)^{2\left(\alpha+2\epsilon\right)}E^{\frac{1}{2}\left(\alpha+2\epsilon\right)\left(L_{L}+L_{R}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+we choose physical angular 
+\begin_inset Formula 
+\begin{eqnarray*}
+\theta_{LR} & = & \pi
+\end{eqnarray*}
+
+\end_inset
+
+thus
+\begin_inset Formula 
+\begin{eqnarray*}
+ &  & \text{F.T.}\left\langle \tilde{\mathcal{H}}_{1}^{S(1)}\otimes\tilde{\mathcal{S}}_{2}^{(1)}\right\rangle \\
+ & = & \frac{4\pi}{\alpha_{s}}\left(\frac{\alpha_{s}}{4\pi}\right)^{2}E^{\frac{1}{2}\left(\alpha+2\epsilon\right)\left(L_{L}+L_{R}\right)}\left[C_{F}C_{A}\left(\frac{4\pi^{2}}{3\epsilon^{2}}+\frac{2.93115\pi^{2}}{\epsilon}-2.71653\pi^{2}\right)\right.\\
+ &  & \left.+C_{F}^{2}\left(\frac{32}{\alpha^{2}\epsilon^{2}}-\frac{32}{\alpha\epsilon^{3}}+\frac{24}{\epsilon^{4}}-\frac{263.1727}{\alpha^{2}}-\frac{40.3505}{\epsilon^{2}}+\frac{1.2428}{\alpha\epsilon}+\frac{15.4637}{\alpha}+\frac{0.2096}{\epsilon}-310\right)\right]
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
