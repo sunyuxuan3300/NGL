@@ -24,7 +24,7 @@ if sys.argv[1:]:
 else:
     SHOW_GRID = True
 
-r = 1
+r = 1e8
 eulerGamma = 0.5772156649
 part = 'imag'
 
@@ -60,7 +60,7 @@ def FF2binv(x2, t5, t5b, t6, t6b, x0, x3, x4):
 def f(x):
     x0, x1, x2, x3, x4, x5, x6, x7 = x
     
-    result = 1024*np.pi**6 * np.cos(0*x0)*((1-x1**2)*(-8*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(-2+\
+    result = 1024*np.pi**6 * np.cos(1*x0)*((1-x1**2)*(-8*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(-2+\
 4*x3))*(-2+x5)*x5-4*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(\
 -2+4*x3))*(-2+x5)*x5*(-2+x6)+4*(x2**2*(-1+2*x3)+x1**6*x2**2*(-1+2*x3)+\
 x1**2*(-2+4*x3+11*x2**2*(-1+2*x3)+x2**4*(-2+4*x3)+8*x2*(1-3*x3+3*\
@@ -118,10 +118,10 @@ def integrate_for_x0(x0_val):
         return f_fixed_x0(x, x0_val)
     
     # 训练积分器
-    integ(integrand, nitn=10, neval=1e6)
+    integ(integrand, nitn=10, neval=1e7)
     
     # 进行最终积分
-    result = integ(integrand, nitn=40, neval=2e7)
+    result = integ(integrand, nitn=50, neval=1e8)
     
     return result.mean, result.sdev
 
@@ -135,10 +135,10 @@ def plot_x0_distribution():
     from multiprocessing import Pool, cpu_count
     
     # 生成x0的值
-    x0_values = np.linspace(0, 2*np.pi, 50)
+    x0_values = np.linspace(0, 2*np.pi, 100)
     
     # 创建进程池
-    n_cores = cpu_count() - 1  # 留一个核心给系统
+    n_cores = 100  # 留一个核心给系统
     print(f"使用 {n_cores} 个CPU核心进行并行计算")
     
     # 使用进程池并行计算
@@ -155,9 +155,9 @@ def plot_x0_distribution():
             integral_values = [r[0] for r in results]
             error_bars = [r[1] for r in results]
             np.savez('integral_vs_x0_'+part+'_r-'+str(format(r, '.1e'))+'.npz', 
-                     x0_values=x0_values[:i+1], 
-                     integral_values=integral_values,
-                     error_bars=error_bars)
+                    x0_values=x0_values[:i+1], 
+                    integral_values=integral_values,
+                    error_bars=error_bars)
     
     # 分离结果
     integral_values, error_bars = zip(*results)
@@ -173,43 +173,199 @@ def plot_x0_distribution():
     plt.savefig('integral_vs_x0_'+part+'_r-'+str(format(r, '.1e'))+'.png')
     plt.show()
 
-def main():
-    # seed the random number generator so results reproducible
-    gv.ranseed((1, 2, 33))
+def main(seed=None):
+    # 如果提供了种子，则使用它
+    if seed is not None:
+        gv.ranseed(seed)
+    else:
+        # 否则使用默认种子
+        gv.ranseed((1, 2, 33))
 
     start_time = time.time()  # 记录开始时间
     
     # 创建积分器并设置详细输出
+    # 使用较少的核心，因为我们会在外层并行
     integ = vegas.Integrator(
         [[0., 2*np.pi], [0., 1.], [0., 1.], [0., 1.],[0., 1.], [0., 1.], [0., 1.], [0., 1.]], 
-        nproc=13,
-        analyzer=vegas.reporter()
+        nproc=1,  # 使用单核，因为我们在外层并行
     )
+    
+    # 适应性迭代阶段 - 减少迭代次数，因为我们会有多次独立运行
+    print(f"\n=== 开始适应性迭代阶段 (seed={seed}) ===")
+    training_result = integ(f, nitn=10, neval=1e6)
 
-    # 适应性迭代阶段
-    print("\n=== 开始适应性迭代阶段 ===")
-    training_result = integ(f, nitn=10, neval=1e7, analyzer=vegas.reporter())
-
-    # 最终积分阶段
-    print("\n=== 开始最终积分阶段 ===")
-    result = integ(f, nitn=40, neval=5e7, analyzer=vegas.reporter())
+    # 最终积分阶段 - 减少迭代次数，因为我们会有多次独立运行
+    print(f"\n=== 开始最终积分阶段 (seed={seed}) ===")
+    result = integ(f, nitn=100, neval=2e7)
     
     end_time = time.time()  # 记录结束时间
     total_time = end_time - start_time  # 计算总时间
     
+    # 输出当前进程的结果
+    print(f"\n=== 种子 {seed} 的计算结果 ===")
+    print(result.summary())
+    print(f'积分结果 = {result}')
+    print(f'计算时间 = {total_time:.2f}秒')
+    
+    # 返回结果以便进行合并
+    return result.mean, result.sdev, total_time
+
+def run_parallel_integration(n_cores):
+    """
+    并行运行多个积分实例，然后合并结果
+    
+    使用权重平均法合并多个独立积分结果：
+    - 权重正比于各自方差的倒数
+    - 最终误差是独立积分误差的合理组合
+    """
+    from multiprocessing import Pool
+    import numpy as np
+    
+    overall_start = time.time()
+    
+    print(f"=== 启动并行积分，使用 {n_cores} 个核心 ===")
+    
+    # 创建不同的随机种子
+    seeds = [(i, i+100, i+200) for i in range(1, n_cores+1)]
+    
+    # 创建进程池并运行
+    with Pool(n_cores) as pool:
+        # 启动所有进程
+        results = pool.map(main, seeds)
+    
+    # 解包结果
+    means, sdevs, times = zip(*results)
+    
+    # 使用方差的倒数作为权重来计算加权平均值
+    weights = np.array([1.0/(sdev**2) for sdev in sdevs])
+    weights = weights / np.sum(weights)  # 归一化权重
+    
+    # 计算加权平均值
+    final_mean = np.sum(np.array(means) * weights)
+    
+    # 计算合并后的误差（正确处理独立测量的误差）
+    # 对于独立测量，合并后的方差是各个方差倒数之和的倒数
+    final_variance = 1.0 / np.sum([1.0/(s**2) for s in sdevs])
+    final_sdev = np.sqrt(final_variance)
+    
+    # 计算总时间
+    total_time = time.time() - overall_start
+    max_time = max(times)
+    
+    # 输出结果
+    print("\n=== 并行积分结果 ===")
+    print(f"总核心数: {n_cores}")
+    print(f"积分结果: {final_mean} ± {final_sdev}")
+    print(f"相对误差: {100 * final_sdev / abs(final_mean):.2f}%")
+    print(f"总运行时间: {total_time:.2f}秒")
+    print(f"最长单次运行时间: {max_time:.2f}秒")
+    print(f"加速比: {max_time/total_time:.2f}x (理想情况下)")
+    
+    # 保存单次结果到文件
+    np.savez(f'parallel_result_{part}_r-{format(r, ".1e")}_cores-{n_cores}.npz',
+             mean=final_mean,
+             sdev=final_sdev,
+             weights=weights,
+             individual_means=means,
+             individual_sdevs=sdevs,
+             individual_times=times,
+             total_time=total_time,
+             n_cores=n_cores)
+    
+    return final_mean, final_sdev, total_time
+
+def run_multiple_integrations(n_cores, n_iterations):
+    """
+    运行多次并行积分并整合所有结果
+    
+    参数:
+    n_cores: 每次积分使用的核心数
+    n_iterations: 运行并行积分的次数
+    """
+    import numpy as np
+    
+    overall_start = time.time()
+    
+    print(f"=== 开始运行 {n_iterations} 次并行积分 ===")
+    
+    all_means = []
+    all_sdevs = []
+    all_times = []
+    
+    # 运行n_iterations次并行积分
+    for i in range(1, n_iterations+1):
+        print(f"\n=== 进行第 {i}/{n_iterations} 次并行积分 ===")
+        mean, sdev, run_time = run_parallel_integration(n_cores)
+        all_means.append(mean)
+        all_sdevs.append(sdev)
+        all_times.append(run_time)
+    
+    # 使用方差的倒数作为权重来计算加权平均值
+    weights = np.array([1.0/(sdev**2) for sdev in all_sdevs])
+    weights = weights / np.sum(weights)  # 归一化权重
+    
+    # 计算加权平均值
+    final_mean = np.sum(np.array(all_means) * weights)
+    
+    # 计算合并后的误差
+    final_variance = 1.0 / np.sum([1.0/(s**2) for s in all_sdevs])
+    final_sdev = np.sqrt(final_variance)
+    
+    # 计算总时间
+    total_time = time.time() - overall_start
+    
+    # 计算Q值 (chi^2/dof)
+    chi2 = np.sum([(m - final_mean)**2 / s**2 for m, s in zip(all_means, all_sdevs)])
+    dof = len(all_means) - 1  # 自由度
+    Q = chi2 / dof if dof > 0 else 0
+    
     # 输出最终结果
     print("\n=== 最终结果 ===")
-    print(result.summary())
-    print('积分结果 = %s' % result)
-    print('Q值 = %.2f' % result.Q)
-    print('相对误差 = %.2f%%' % (100 * result.sdev / abs(result.mean)))
-    print('总计算时间 = %.2f秒' % total_time)  # 使用我们自己计算的时间
+    print(f"总运行次数: {n_iterations}")
+    print(f"每次运行核心数: {n_cores}")
+    print(f"积分结果 = {final_mean} ± {final_sdev}")
+    print(f"Q值 = {Q:.2f}")
+    print(f"相对误差 = {100 * final_sdev / abs(final_mean):.2f}%")
+    print(f"总计算时间 = {total_time:.2f}秒")
     
-    if SHOW_GRID:
-        integ.map.show_grid(20)
+    # 保存结果到文件
+    np.savez(f'final_result_{part}_r-{format(r, ".1e")}_cores-{n_cores}_iters-{n_iterations}.npz',
+             mean=final_mean,
+             sdev=final_sdev,
+             Q=Q,
+             individual_means=all_means,
+             individual_sdevs=all_sdevs,
+             individual_times=all_times,
+             total_time=total_time,
+             n_cores=n_cores,
+             n_iterations=n_iterations)
+    
+    return final_mean, final_sdev, Q, total_time
+
+def main2():    
+    # 使用多次并行积分
+    result, error, Q, total_time = run_multiple_integrations(n_cores=110, n_iterations=100)
+    
+    # 输出最终结果
+    print("\n=== 最终结果 ===")
+    print(f'积分结果 = {result} ± {error}')
+    print(f'Q值 = {Q:.2f}')
+    print(f'相对误差 = {100 * error / abs(result):.2f}%')
+    print(f'总计算时间 = {total_time:.2f}秒')  # 使用我们自己计算的时间
+    
+    # 保存结果到文件
+    np.savez('final_result_'+part+'_r-'+str(format(r, '.1e'))+'.npz',
+             mean=result,
+             sdev=error,
+             Q=Q,
+             total_time=total_time)
+#    if SHOW_GRID:
+#        main.integ.map.show_grid(20)
+
 
 if __name__ == '__main__':
-    plot_x0_distribution()
+    main2()
+
 
 
 # Copyright (c) 2013-22 G. Peter Lepage.
