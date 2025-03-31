@@ -30,8 +30,8 @@ else:
     SHOW_GRID = True
 
 # 全局参数
-r = 1e8
-part = 'imag'
+r = 0
+part = 'real'
 eulerGamma = 0.5772156649
 
 # 参数配置
@@ -40,8 +40,8 @@ class IntegrationConfig:
     def __init__(self):
         
         # 类参数
-        self.r = 1e8
-        self.part = 'imag'
+        self.r = 0
+        self.part = 'real'
         self.eulerGamma = 0.5772156649
         
         # 积分区间
@@ -53,19 +53,19 @@ class IntegrationConfig:
             [0., 1.],       # x4
             [0., 1.],       # x5
             [0., 1.],       # x6
-            [0., 1.],       # x7
+            [0., 1.]        # x7
         ]
         
         # 训练阶段参数
         self.training_iterations = 10    # nitn for training
-        self.training_evaluations = 1e7  # neval for training
+        self.training_evaluations = 1e6  # neval for training
         
         # 计算阶段参数
         self.final_iterations = 20      # nitn for final integration
-        self.final_evaluations = 2e8     # neval for final integration
+        self.final_evaluations = 1e6     # neval for final integration
         
         # 并行计算参数
-        self.n_cores = 110               # 并行核心数
+        self.n_cores = 100               # 并行核心数
         self.n_iterations = 5           # 重复计算次数
         
         # 输出控制
@@ -92,9 +92,9 @@ class IntegrationConfig:
             },
             # 积分参数
             'training_iterations': 10,  # 训练迭代次数
-            'training_evaluations': 1e7,# 训练采样点数
-            'final_iterations': 50,     # 最终迭代次数
-            'final_evaluations': 1e8    # 最终采样点数
+            'training_evaluations': 1e6,# 训练采样点数
+            'final_iterations': 10,     # 最终迭代次数
+            'final_evaluations': 1e6    # 最终采样点数
         }
         
         # 添加图像配置
@@ -145,71 +145,12 @@ class IntegrationConfig:
             'verbose': self.verbose
         }
 
-@jit(nopython=True)
-def FF1(x2, t5, t5b, t6, t6b, x0, x3, x4):
-    return 1-2*x4+r*x2*(1+4*(-1+2*t6)*np.sqrt(1-x3)*np.sqrt(x3)*np.sqrt(1-x4)*\
-np.sqrt(x4)-2*x4+x3*(-2+4*x4))*np.cos(x0)+2*r*x2*((1-2*t5)*np.sqrt(1-\
-x4)*np.sqrt(x4)+2*(-1+2*t5)*x3*np.sqrt(1-x4)*np.sqrt(x4)+np.sqrt(1-x3)\
-*np.sqrt(x3)*(-4*np.sqrt(t5)*np.sqrt(t5b)*np.sqrt(t6)*np.sqrt(t6b)+(-\
-1+2*t6)*(-1+2*x4)+t5*(-2+4*t6+4*x4-8*t6*x4)))*np.sin(x0)
-
-@jit(nopython=True)
-def FF2(x2, t5, t5b, t6, t6b, x0, x3, x4):
-    return (4*(-1+2*t6)*x2*np.sqrt(1-x3)*np.sqrt(x3)*np.sqrt(1-x4)*np.sqrt(x4)+\
-x2*(-1+2*x3)*(-1+2*x4)+(r-2*r*x4)*np.cos(x0)+2*r*(1-2*t5)*np.sqrt(1-\
-x4)*np.sqrt(x4)*np.sin(x0))/r
-
-@jit(nopython=True)
-def FF1binv(x2, t5, t5b, t6, t6b, x0, x3, x4):
-    return x2-2*x2*x4+r*(1+4*(-1+2*t6)*np.sqrt(1-x3)*np.sqrt(x3)*np.sqrt(1-x4)*\
-np.sqrt(x4)-2*x4+x3*(-2+4*x4))*np.cos(x0)+2*r*((-1+2*t5)*(-1+2*x3)*np.\
-sqrt(1-x4)*np.sqrt(x4)+np.sqrt(1-x3)*np.sqrt(x3)*(1-2*t5-2*t6+4*t5*t6-\
-4*np.sqrt(t5)*np.sqrt(t5b)*np.sqrt(t6)*np.sqrt(t6b)-2*(-1+2*t5)*(-1+2*\
-t6)*x4))*np.sin(x0)
-
-@jit(nopython=True)
-def FF2binv(x2, t5, t5b, t6, t6b, x0, x3, x4):
-    return (4*(-1+2*t6)*np.sqrt(1-x3)*np.sqrt(x3)*np.sqrt(1-x4)*np.sqrt(x4)+(-1+\
-2*x3)*(-1+2*x4)+r*x2*(1-2*x4)*np.cos(x0)+2*r*(1-2*t5)*x2*np.sqrt(1-x4)\
-*np.sqrt(x4)*np.sin(x0))/r
 
 @jit(nopython=True)
 def f(x):
     x0, x1, x2, x3, x4, x5, x6, x7 = x
     
-    result = 1024*np.pi**6 * np.cos(1*x0)*((1-x1**2)*(-8*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(-2+\
-4*x3))*(-2+x5)*x5-4*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(\
--2+4*x3))*(-2+x5)*x5*(-2+x6)+4*(x2**2*(-1+2*x3)+x1**6*x2**2*(-1+2*x3)+\
-x1**2*(-2+4*x3+11*x2**2*(-1+2*x3)+x2**4*(-2+4*x3)+8*x2*(1-3*x3+3*\
-x3**2)+8*x2**3*(1-3*x3+3*x3**2))+x1**4*(-2+4*x3+11*x2**2*(-1+2*x3)+\
-x2**4*(-2+4*x3)+8*x2*(1-3*x3+3*x3**2)+8*x2**3*(1-3*x3+3*x3**2))+x1*x2*\
-(-3+6*x3+x2**2*(-3+6*x3)+x2*(3-8*x3+8*x3**2))+x1**5*x2*(-3+6*x3+x2**2*\
-(-3+6*x3)+x2*(3-8*x3+8*x3**2))+2*x1**3*(2*(1-2*x3)**2+2*x2**4*(1-2*x3)\
-**2+5*x2*(-1+2*x3)+5*x2**3*(-1+2*x3)+3*x2**2*(3-8*x3+8*x3**2)))*(2-x5)\
-*x5*(2-x6)*x6-8*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(-2+\
-4*x3))*(-2+x6)*x6-4*x2*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+x1**2+x1*(\
--2+4*x3))*(-2+x5)*(-2+x6)*x6-8*(x1+x2)**2*(1+x1*x2)**2*(-1+2*x3)*(1+\
-x1**2+x1*(-2+4*x3))*(-2+x5)*x5*(-2+x6)*x6-x2*(x1+x2)**2*(1+x1*x2)**2*(\
--1+2*x3)*(1+x1**2+x1*(-2+4*x3))*(-2+x5)*x5*(-2+x6)*x6*(16*eulerGamma-\
-24*np.log(2)-4*np.log(1-x3)-4*np.log(x3)-4*np.log(1-x4)-4*np.log(x4)+\
-np.log(np.abs(FF1(x2,0,1,0,1,x0,x3,x4)))+np.log(np.abs(FF1(x2,0,1,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF1(x2,1,0,0,1,x0,x3,x4)))+np.log(np.abs(FF1(x2,1,0,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF1binv(x2,0,1,0,1,x0,x3,x4)))+np.log(np.abs(FF1binv(x2,0,1,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF1binv(x2,1,0,0,1,x0,x3,x4)))+np.log(np.abs(FF1binv(x2,1,0,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF2(x2,0,1,0,1,x0,x3,x4)))+np.log(np.abs(FF2(x2,0,1,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF2(x2,1,0,0,1,x0,x3,x4)))+np.log(np.abs(FF2(x2,1,0,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF2binv(x2,0,1,0,1,x0,x3,x4)))+np.log(np.abs(FF2binv(x2,0,1,1,0,x0,x3,x4)))+\
-np.log(np.abs(FF2binv(x2,1,0,0,1,x0,x3,x4)))+np.log(np.abs(FF2binv(x2,1,0,1,0,x0,x3,x4)))+\
-(1j/2)*np.pi*np.sign(FF1(x2,0,1,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF1(x2,0,1,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF1(x2,1,0,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF1(x2,1,0,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF1binv(x2,0,1,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF1binv(x2,0,1,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF1binv(x2,1,0,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF1binv(x2,1,0,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF2(x2,0,1,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF2(x2,0,1,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF2(x2,1,0,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF2(x2,1,0,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF2binv(x2,0,1,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF2binv(x2,0,1,1,0,x0,x3,x4))+\
-(1j/2)*np.pi*np.sign(FF2binv(x2,1,0,0,1,x0,x3,x4))+(1j/2)*np.pi*np.sign(FF2binv(x2,1,0,1,0,x0,x3,x4)))))/(256*np.pi**6*x2*(x1+x2)\
-**2*(1+x1*x2)**2*np.sqrt(1-x3)*np.sqrt(x3)*(1+x1**2+x1*(-2+4*x3))**2*\
-np.sqrt(1-x4)*np.sqrt(x4)*(-2+x5)*x5*(-2+x6)*x6*(x1**2*(-1+x7)-x7))
+    result = np.sin(x0)
     
     if part == 'real':
         return np.real(result)
@@ -279,8 +220,8 @@ def plot_x0_distribution(config=None):
     # 准备参数
     args = [(x0, config) for x0 in x0_values]
     
-    # 创建结果目录
-    result_dir = config.get_result_dir()
+    # 创建结果目录，修改为 result_x0dist_...
+    result_dir = f'result_x0dist_{config.part}_r-{format(config.r, ".1e")}_{config.get_timestamp()}'
     try:
         os.makedirs(result_dir, exist_ok=True)
         print(f"创建结果目录: {os.path.abspath(result_dir)}")
@@ -316,11 +257,16 @@ def plot_x0_distribution(config=None):
     # 绘制结果
     plt.figure(figsize=config.x0_distribution['plot_size'])
     plt.errorbar(x0_values, integral_values, yerr=error_bars, 
-                **config.x0_distribution['plot_style'])
+                 fmt=config.x0_distribution['plot_style']['fmt'],
+                 capsize=config.x0_distribution['plot_style']['capsize'],
+                 markersize=config.x0_distribution['plot_style']['markersize'],
+                 elinewidth=config.x0_distribution['plot_style']['elinewidth'])
     
     plt.xlabel(config.plot_config['xlabel'])
     plt.ylabel(config.plot_config['ylabel'])
     plt.title(config.plot_config['title'])
+    
+    # 单独调用 plt.grid()
     if config.x0_distribution['plot_style']['grid']:
         plt.grid(True)
     
@@ -795,7 +741,7 @@ def main2(
 
 if __name__ == '__main__':
     # 示例：使用默认配置运行
-    main2()
+    main2(run_x0_distribution=True)
     
     # 示例：使用自定义配置运行
     # custom_x0_params = {
